@@ -1,3 +1,8 @@
-<h1>Vancouver Vendor Diary</h1>
-<p>We are using accumulated data about the<a href=" http://data.vancouver.ca/datacatalogue/foodVendors.htm"><em>Vendors of Vancouver</em></a>, which includes lat/long coordinates, location, name, and description, to create a web application that allows users to keep track of vendors they've been to and vendors they want to go to in the future. With VVD, users can rate and comment on vendors they've been to and source opinions about future visits to other vendors.</p>
-<p>Users are also able to share their dining history with their social networks and friends who also use VVD. Dining history is based on user check-ins at vendor locations through the mobile version of our web application or through integration with Facebook check-in. Personalized user lists can be created and shared with the public if they so choose. Lastly, users can search for vendors based on a set of search criteria.</p>
+<div class="center jumbotron">
+	<h1>Vancouver Vendor Diary</h1>
+	<h2>Welcome to the visualization of <a href=" http://data.vancouver.ca/datacatalogue/foodVendors.htm"><em>Vendors of Vancouver</em></a></h2>
+	<%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("stratton.png", alt: "Team SO logo"),
+            'https://vvd.herokuapp.com/' %>
