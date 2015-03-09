@@ -65,7 +65,7 @@ GEM
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     erubis (2.7.0)
-    execjs (2.3.0)
+    execjs (2.4.0)
     ffi (1.9.6)
     formatador (0.2.5)
     globalid (0.3.3)
@@ -114,7 +114,7 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     mysql2 (0.3.18)
     nenv (0.2.0)
     nokogiri (1.6.6.2)
