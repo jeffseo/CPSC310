@@ -1,12 +1,20 @@
 Rails.application.routes.draw do
-  get 'vendors' => 'vendors#index'
+
+  get 'vendors/index'
+  resources :vendors do
+    collection {post :import}
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  get '/vendors/:id', to: 'vendors#show'
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-
+  
+  # You can also have the root to be hello world here.
+  #root 'application#hello'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
