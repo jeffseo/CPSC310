@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #map-container {
-   height: 400px;
+   height: 600px;
+   width: 1000px;
    border-radius: 16px 16px;
    border-color: #fff;
    border-style: solid;
@@ -13,6 +14,6 @@
 }
 
 #map-canvas {
-   height: 384px;
+   height: 584px;
    width: 100%;
 }
