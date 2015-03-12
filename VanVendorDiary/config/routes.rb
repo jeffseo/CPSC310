@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'vendors/index'
-  resources :vendors do
-    collection {post :import}
-  end
   get 'sessions/new'
 
   root 'static_pages#home'
@@ -11,13 +7,17 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
+  get '/vendors/:id', to: 'vendors#show'
+  get 'vendors/index'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   resources :users
+  resources :vendors do
+    collection {post :import}
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  get '/vendors/:id', to: 'vendors#show'
   # You can have the root of your site routed with "root"
   
   # You can also have the root to be hello world here.
