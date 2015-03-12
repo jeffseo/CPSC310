@@ -1,17 +1,49 @@
+<%= javascript_tag do %>
+setMarkers(<%= @vmarkers.to_json %>);
+<% end %>
+
+<script>ready();</script>
+
 <h1>Vendors#show</h1>
-<p>List of vendors parsed:</p>
-<table border = "1">
-  <tr>
-    <th>key</th>
-    <th>vendor_type</th>
-    <th>business name</th>
-    <th>location</th>
-    <th>description</th>
-    <th>lat</th>
-    <th>lon</th>
-  </tr>
- 
-  <% @vendors.each do |vendor| %>
+
+<button type="button" id="switch" onclick="switchView()">Switch to list view.</button>
+
+<script>
+function switchView() {
+  var inner = document.getElementById("switch").innerHTML;
+  if (inner == "Switch to list view.") {
+    document.getElementById("switch").innerHTML = "Switch to map view.";
+    document.getElementById("map").style.visibility = 'hidden';
+    document.getElementById("list").style.visibility = 'visible';
+  } else if (inner == "Switch to map view.") {
+    document.getElementById("switch").innerHTML = "Switch to list view.";
+    document.getElementById("list").style.visibility = 'hidden';
+    document.getElementById("map").style.visibility = 'visible';
+  }
+}
+</script>
+
+<div id="map">
+  <p>Map of vendors parsed:</p>
+  <div id="map-container">
+    <div id="map-canvas"></div>
+  </div>
+</div>
+
+<div id="list">
+  <p>List of vendors parsed:</p>
+  <table border = "1">
+    <tr>
+      <th>key</th>
+      <th>vendor_type</th>
+      <th>business name</th>
+      <th>location</th>
+      <th>description</th>
+      <th>lat</th>
+      <th>lon</th>
+    </tr>
+
+    <% @vendors.each do |vendor| %>
     <tr>
       <td><%= vendor.key %></td>
       <td><%= vendor.vendor_type %></td>
@@ -21,5 +53,6 @@
       <td><%= vendor.lat %></td>
       <td><%= vendor.lon %></td>
     </tr>
-  <% end %>
-</table>
+    <% end %>
+  </table>
+</div>

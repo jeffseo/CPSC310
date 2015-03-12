@@ -10,5 +10,6 @@ class VendorsController < ApplicationController
 
   def show
     @vendors = Vendor.order(:key)
+    @vmarkers = Vendor.select("business_name", "lat", "lon")
   end
 end
