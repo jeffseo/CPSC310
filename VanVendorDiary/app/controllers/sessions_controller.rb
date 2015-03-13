@@ -4,14 +4,18 @@ class SessionsController < ApplicationController
 
   #omniauth
   def create2
+    auth = request.env["omniauth.auth"]
+    omniauthuser = Omniauthuser.find_by_provider_and_uid(auth["provider"], auth["uid"]) || Omniauthuser.create_with_omniauth(auth)
     omniauthuser = Omniauthuser.omniauth(env['omniauth.auth'])
     session[:user_id] = omniauthuser.id
     log_in omniauthuser
-    redirect_to root_url
+    redirect_to root_url, :notice=> "Signed in! Hello " + omniauthuser.name + "!"
   end
 
   def destroy2
     session[:user_id] = nil
+    log_out
+    redirect_to root_url
   end
 
   def failure  
