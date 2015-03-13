@@ -1,7 +1,6 @@
 class Vendor < ActiveRecord::Base
    validates :key, presence: true, uniqueness: true
   def self.import(file)
-    #if validates_uniqueness_of :key
     allowed_attributes = [ "key", "vendor_type", "status", "business_name", "location", "description", "lat", "lon"]
     spreadsheet = open_spreadsheet(file)
     header = spreadsheet.row(1)
