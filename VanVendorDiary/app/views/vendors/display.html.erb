@@ -1,5 +1,17 @@
 <h1>List of Vendors</h1>
 <%= button_to "Go back to index", vendors_path, :method => "get" %>
+
+<button type="button" id="switch" onclick="switchView()">Switch to list view.</button>
+
+<div id="map">
+  <p>Map of vendors parsed:</p>
+  <div id="map-container">
+    <div id="map-canvas"></div>
+  </div>
+</div>
+
+
+<div id="list">
 <p>List of vendors parsed:</p>
 <table border = "1">
   <tr>
@@ -24,3 +36,4 @@
     </tr>
   <% end %>
 </table>
+</div>

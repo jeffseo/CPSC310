@@ -6,7 +6,7 @@
 
 <% provide(:title, 'All vendors') %>
 <h3>All vendors</h3>
-<a href = "/vendors/display"> Display all vendors </a><br />
+<%= link_to "Display all vendors", vendors_display_path %>
 <%= will_paginate %>
 <ul class="vendors">
   <% @vendors.each do |vendor| %>

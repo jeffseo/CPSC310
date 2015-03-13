@@ -3,7 +3,6 @@ class VendorsController < ApplicationController
    @vendors = Vendor.paginate(page: params[:page]) 
   end
 
-
   def import
     @vendor = Vendor.import(params[:file])
     flash[:success] = "file imported"
@@ -16,6 +15,7 @@ class VendorsController < ApplicationController
 
   def display
     @vendors = Vendor.order(:key)
+    @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
+    gon.vendors = @vmarkers
   end
 end
-
