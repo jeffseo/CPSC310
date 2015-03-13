@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   get 'sessions/new'
 
+#omniauth
+get 'auth/:provider/callback', to: 'sessions#create2'
+get 'logout', to: 'sessions#destroy2'
+
+
   root 'static_pages#home'
   get 'help' => 'static_pages#help'
   get 'about' => 'static_pages#about'
