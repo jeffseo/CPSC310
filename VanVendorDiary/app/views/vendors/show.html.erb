@@ -1,0 +1,25 @@
+<h1>List of Vendors</h1>
+<p>List of vendors parsed:</p>
+<table border = "1">
+  <tr>
+    <th>key</th>
+    <th>vendor_type</th>
+    <th>business name</th>
+    <th>location</th>
+    <th>description</th>
+    <th>lat</th>
+    <th>lon</th>
+  </tr>
+ 
+  <% @vendors.each do |vendor| %>
+    <tr>
+      <td><%= vendor.key %></td>
+      <td><%= vendor.vendor_type %></td>
+      <td><%= vendor.business_name %></td>
+      <td><%= vendor.location %></td>
+      <td><%= vendor.description %></td>
+      <td><%= vendor.lat %></td>
+      <td><%= vendor.lon %></td>
+    </tr>
+  <% end %>
+</table>
