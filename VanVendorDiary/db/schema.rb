@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20150313080547) do
     t.boolean  "activated",         limit: 1,   default: false
     t.datetime "activated_at"
     t.string   "reset_digest",      limit: 255
+    t.datetime "reset_sent_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
