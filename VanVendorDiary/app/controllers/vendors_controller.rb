@@ -1,13 +1,19 @@
 class VendorsController < ApplicationController
   def index
+   @vendors = Vendor.paginate(page: params[:page]) 
   end
 
   def import
     @vendor = Vendor.import(params[:file])
-    redirect_to :controller=>'vendors', :action =>'show', :id=>'import', :notice=>'vendors imported'
+    flash[:success] = "file imported"
+    redirect_to :controller=>'vendors', :action =>'index'
   end
 
   def show
+    @vendor = Vendor.find(params[:id])
+  end
+
+  def display
     @vendors = Vendor.order(:key)
     @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers

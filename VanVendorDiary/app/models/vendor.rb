@@ -10,8 +10,6 @@ class Vendor < ActiveRecord::Base
       vendor.attributes = row.to_hash.select{ |k,v| allowed_attributes.include? k}
       if(vendor.valid?)
         vendor.save!
-      else
-        return
       end
     end
   end

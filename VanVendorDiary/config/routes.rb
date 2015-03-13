@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   get 'help' => 'static_pages#help'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
+  get 'display' => 'static_pages#display'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
-  get '/vendors/:id', to: 'vendors#show'
   get 'vendors/index'
+  get 'vendors/display'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   resources :users

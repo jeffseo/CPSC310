@@ -8,7 +8,7 @@ var info;
 var markers = gon.vendors;
 
 function initialize() {
-
+//window.alert("hi");
   var mapOptions = {
     center: new google.maps.LatLng(49.2812, -123.1258),
     zoom: 15,
