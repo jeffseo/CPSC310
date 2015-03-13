@@ -1,6 +1,6 @@
 class Omniauthuser < ActiveRecord::Base
 	def self.omniauth(auth)
-    where(auth.slice(:provider, :uid).permit!).first_or_initialize.tap do |omniauthuser|
+   	where(provider: auth.provider, uid: auth.uid).first_or_create do |omniauthuser|
       omniauthuser.provider = auth.provider
       omniauthuser.uid = auth.uid
       omniauthuser.name = auth.info.name
