@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 # Use bcrypt to hash password
 gem 'bcrypt', '3.1.7'
+# Fake users for testing
+gem 'faker', '1.4.2'
 # Converts Less to Sass.
 gem 'bootstrap-sass', '3.2.0.0'
 # Recommended, it automatically adds the proper vendor prefixes to CSS code at compile time.
