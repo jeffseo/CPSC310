@@ -6,12 +6,17 @@ class SessionsController < ApplicationController
   def create2
     omniauthuser = Omniauthuser.omniauth(env['omniauth.auth'])
     session[:user_id] = omniauthuser.id
+    log_in omniauthuser
     redirect_to root_url
   end
 
   def destroy2
     session[:user_id] = nil
   end
+
+  def failure  
+    redirect_to root_url, alert: "Authentication failed, please try again."  
+  end  
 
   def create
     user = User.find_by(email: params[:session][:email].downcase)
@@ -25,6 +30,7 @@ class SessionsController < ApplicationController
   end
   
   def destroy
+    session[:user_id] = nil
     log_out
     redirect_to root_url
   end

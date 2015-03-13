@@ -6,7 +6,7 @@ class CreateOmniauthusers < ActiveRecord::Migration
       t.string :name
       t.string :image
       t.string :token
-      t.datet :expires_at
+    #  t.datetime :expires_at
 
       t.timestamps null: false
     end
