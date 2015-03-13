@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use bcrypt to hash password
@@ -36,6 +35,7 @@ gem 'gon', '5.2.3'
 gem 'roo', '1.13.2'
 gem 'spreadsheet', '1.0.3'
 gem 'iconv', '1.0.4'
+gem 'seed_dump', '3.2.2'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '0.4.0', group: :doc
 
