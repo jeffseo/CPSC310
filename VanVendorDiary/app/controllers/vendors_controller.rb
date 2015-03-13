@@ -3,7 +3,7 @@ class VendorsController < ApplicationController
   end
 
   def import
-    Vendor.import(params[:file])
+    @vendor = Vendor.import(params[:file])
     redirect_to :controller=>'vendors', :action =>'show', :id=>'import', :notice=>'vendors imported'
   end
 

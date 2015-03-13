@@ -1,7 +1,6 @@
 class Vendor < ActiveRecord::Base
-   #validates_uniqueness_of :key, message:
+   validates :key, presence: true, uniqueness: true
   def self.import(file)
-    if validates_uniqueness_of :key
     allowed_attributes = [ "key", "vendor_type", "status", "business_name", "location", "description", "lat", "lon"]
     spreadsheet = open_spreadsheet(file)
     header = spreadsheet.row(1)
@@ -9,8 +8,11 @@ class Vendor < ActiveRecord::Base
       row = Hash[[header, spreadsheet.row(i)].transpose]
       vendor = find_by_id(row["id"]) || new
       vendor.attributes = row.to_hash.select{ |k,v| allowed_attributes.include? k}
-      vendor.save!
-    end
+      if(vendor.valid?)
+        vendor.save!
+      else
+        return
+      end
     end
   end
 
