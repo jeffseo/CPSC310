@@ -25,4 +25,17 @@ ActiveRecord::Schema.define(version: 20150313053029) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
+  create_table "vendors", force: :cascade do |t|
+    t.string   "key",           limit: 255
+    t.string   "vendor_type",   limit: 255
+    t.string   "status",        limit: 255
+    t.string   "business_name", limit: 255
+    t.string   "location",      limit: 255
+    t.string   "description",   limit: 255
+    t.float    "lat",           limit: 24
+    t.float    "lon",           limit: 24
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
 end
