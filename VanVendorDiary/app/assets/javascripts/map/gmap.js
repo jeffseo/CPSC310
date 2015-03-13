@@ -22,15 +22,11 @@ function initialize() {
   // initializing map
   map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
-  // add static marker with infowindow
-  createMarker({lat: 49.2812, lng: -123.1258}, map, "Vendor A");
-  createMarker({lat: 49.2800, lng: -123.1252}, map, "Vendor B");
-
   populateMap();
 }
 
 function populateMap() {
-  
+
   for (var i in markers) {
 
     var markerPos = new google.maps.LatLng( markers[i].lat, markers[i].lon );
@@ -42,7 +38,9 @@ function populateMap() {
     });
 
     var infoWindow = new google.maps.InfoWindow({
-      content: markers[i].description
+      content: "<h3>" + markers[i].business_name + "</h3>" +
+      "<strong>Type of food: </strong>" + markers[i].description + "<br />" +
+      "<strong>Location: </strong>" + markers[i].location
     });
 
     google.maps.event.addListener(marker, 'click', function(pointer, bubble) {

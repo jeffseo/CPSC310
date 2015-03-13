@@ -2,21 +2,6 @@
 
 <button type="button" id="switch" onclick="switchView()">Switch to list view.</button>
 
-<script>
-function switchView() {
-  var inner = document.getElementById("switch").innerHTML;
-  if (inner == "Switch to list view.") {
-    document.getElementById("switch").innerHTML = "Switch to map view.";
-    document.getElementById("map").style.visibility = 'hidden';
-    document.getElementById("list").style.visibility = 'visible';
-  } else if (inner == "Switch to map view.") {
-    document.getElementById("switch").innerHTML = "Switch to list view.";
-    document.getElementById("list").style.visibility = 'hidden';
-    document.getElementById("map").style.visibility = 'visible';
-  }
-}
-</script>
-
 <div id="map">
   <p>Map of vendors parsed:</p>
   <div id="map-container">

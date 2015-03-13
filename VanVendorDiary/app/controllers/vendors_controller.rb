@@ -9,7 +9,7 @@ class VendorsController < ApplicationController
 
   def show
     @vendors = Vendor.order(:key)
-    @vmarkers = Vendor.select("business_name", "description", "lat", "lon")
+    @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers
   end
 end
