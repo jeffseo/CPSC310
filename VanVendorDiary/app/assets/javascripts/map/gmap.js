@@ -5,9 +5,7 @@ $(window).load(function() {
 
 var map;
 var info;
-var marker;
-var info;
-var markers = [];
+var markers = gon.vendors;
 
 function initialize() {
 
@@ -25,21 +23,38 @@ function initialize() {
   map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
   // add static marker with infowindow
-  createMarker({lat: 49.2812, lng: -123.1258}, map, "a marker!");
-  var info = createInfoWindow("Vendor A");
-  google.maps.event.addListener(marker, 'click', function() {
-    info.open(map,marker);
-  });
+  createMarker({lat: 49.2812, lng: -123.1258}, map, "Vendor A");
+  createMarker({lat: 49.2800, lng: -123.1252}, map, "Vendor B");
 
-  createMarker({lat: 49.2800, lng: -123.1252}, map, "another marker!");
-  info = createInfoWindow("Vendor B");
-  google.maps.event.addListener(marker, 'click', function() {
-    info.open(map,marker);
-  });
+  populateMap();
+}
+
+function populateMap() {
+  
+  for (var i in markers) {
+
+    var markerPos = new google.maps.LatLng( markers[i].lat, markers[i].lon );
+
+    var marker = new google.maps.Marker({
+      position: markerPos,
+      map: map,
+      title: markers[i].business_name,
+    });
+
+    var infoWindow = new google.maps.InfoWindow({
+      content: markers[i].description
+    });
+
+    google.maps.event.addListener(marker, 'click', function(pointer, bubble) {
+      return function() {
+        bubble.open(map, pointer);
+      };
+    }(marker, infoWindow));
+  }
 }
 
 function createMarker(coords, map, title) {
-  marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
     position: coords,
     map: map,
     title: title
