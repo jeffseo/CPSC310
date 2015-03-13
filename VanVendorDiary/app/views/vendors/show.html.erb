@@ -1,0 +1,28 @@
+<%= provide(:title, @vendor.business_name) %>
+<div class="row">
+  <aside class="col-md-10">
+<h1>
+  <%= @vendor.business_name %>
+</h1>
+<table border = "1">
+  <tr>
+    <th>key</th>
+    <th>vendor_type</th>
+    <th>location</th>
+    <th>description</th>
+    <th>lat</th>
+    <th>lon</th>
+  </tr> 
+
+
+  <tr>
+    <td><%= @vendor.key %></td>
+    <td><%= @vendor.vendor_type%></td>
+    <td><%=@vendor.location%></td>
+    <td><%=@vendor.description%></td>
+    <td><%=@vendor.lat%></td>
+    <td><%=@vendor.lon%></td>
+  </tr> 
+</table>
+</aside>
+</div>
