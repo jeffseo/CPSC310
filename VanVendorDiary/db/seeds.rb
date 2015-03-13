@@ -111,3 +111,20 @@ Vendor.create!([
   {key: "DT65", vendor_type: "vendor_food", status: "open", business_name: "Culver City Salads", location: "East Side of 600 Hamilton St", description: "Salads", lat: 49.2804, lon: -123.113},
   {key: "DT78", vendor_type: "vendor_food", status: "open", business_name: "Chou Chou Crepes", location: "East Side of 600 Hamilton St", description: "French Crepes", lat: 49.2801, lon: -123.114}
 ])
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+User.create!(name:  "Example User",
+             email: "example@railstutorial.org",
+             password:              "foobar",
+             password_confirmation: "foobar",
+             admin: true)
+
+99.times do |n|
+  name  = Faker::Name.name
+  email = "example-#{n+1}@railstutorial.org"
+  password = "password"
+  User.create!(name:  name,
+               email: email,
+               password:              password,
+               password_confirmation: password)
+end
