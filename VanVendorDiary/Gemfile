@@ -40,6 +40,8 @@ gem 'sdoc', '0.4.0', group: :doc
 # puma does not time out, if we use puma server, we need to timeout.
 gem 'rack-timeout'
 
+gem 'omniauth-facebook'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '3.4.0'
@@ -66,4 +68,3 @@ group :production do
 end
 
 
-gem 'omniauth-facebook'

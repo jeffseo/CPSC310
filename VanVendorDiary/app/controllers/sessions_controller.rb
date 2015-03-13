@@ -12,12 +12,6 @@ class SessionsController < ApplicationController
     redirect_to root_url, :notice=> "Signed in! Hello " + omniauthuser.name + "!"
   end
 
-  def destroy2
-    session[:user_id] = nil
-    log_out
-    redirect_to root_url
-  end
-
   def failure  
     redirect_to root_url, alert: "Authentication failed, please try again."  
   end  
