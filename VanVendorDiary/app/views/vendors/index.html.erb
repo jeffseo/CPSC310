@@ -1,9 +1,19 @@
-<h1>Import Vendors</h1>
-<p> If file contains duplicates, result in error</p>
-<a href = "/vendors/show"> Display vendors </a><br />
-<h2> Import Vendors</h2>
+<h1>Vendors</h1>
  <%= form_tag import_vendors_path, multipart: true do %>
    <%= file_field_tag :file %>
   <%= submit_tag "Import" %>
 <% end %>
 
+<% provide(:title, 'All vendors') %>
+<h3>All vendors</h3>
+<a href = "/vendors/display"> Display all vendors </a><br />
+<%= will_paginate %>
+<ul class="vendors">
+  <% @vendors.each do |vendor| %>
+    <li>
+      <%= link_to vendor.business_name, vendor %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

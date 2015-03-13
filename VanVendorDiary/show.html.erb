@@ -1,8 +1,10 @@
 <%= provide(:title, @vendor.business_name) %>
+<div class="row">
+  <aside class="col-md-10">
 <h1>
   <%= @vendor.business_name %>
 </h1>
-<table border = "2">
+<table border = "1">
   <tr>
     <th>key</th>
     <th>vendor_type</th>
@@ -22,6 +24,5 @@
     <td><%=@vendor.lon%></td>
   </tr> 
 </table>
-</br>
-<%= link_to "Go Back to index", vendors_path %>
-
+</aside>
+</div>
