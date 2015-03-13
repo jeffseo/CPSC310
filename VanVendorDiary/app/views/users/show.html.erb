@@ -4,7 +4,33 @@
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <em><%= @user.name %></em>
+        <address><%= @user.email %></address>
+      </h1>
+    </section>
+    <section class="last_visited_vendor">
+      <h1>
+        Last check-in time: <%= Time.zone.now%>
+      </h1>
+    </section>
+    <section class="comments">
+      <h1>
+        <%=link_to "Comments", '#' %>
+      </h1>
+    </section>
+    <section class="history">
+      <h1>
+        <%=link_to "Visited Vendors", '#' %>
+      </h1>
+    </section>
+    <section class="favorites">
+      <h1>
+        <%=link_to "Favourite Vendors", '#' %>
+      </h1>
+    </section>
+    <section class="social_media">
+      <h1>
+        <%=link_to "Linked Accounts", '#' %>
       </h1>
     </section>
   </aside>
