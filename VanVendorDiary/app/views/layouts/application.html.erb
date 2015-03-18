@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= Gon::Base.render_data({}) %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>
-  </head>
-  <body>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= Gon::Base.render_data({}) %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<% if controller.controller_name == 'vendors' %>
+  <body data-no-turbolink>
+<% else %>
+  <body >
+<% end %>
     <%= render 'layouts/header'%>
     <div class="container">
       <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "alert alert-#{message_type}")%>
+      <%= content_tag(:div, message, class: "alert alert-#{message_type}")%>
       <% end %>
       <%= yield %>
       <%= debug(params) if Rails.env.development? %>
       <%= render 'layouts/footer'%>
     </div>
   </body>
-</html>
+  </html>
