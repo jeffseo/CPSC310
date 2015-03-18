@@ -8,7 +8,6 @@ var info;
 var markers = gon.vendors;
 
 function initialize() {
-//window.alert("hi");
   var mapOptions = {
     center: new google.maps.LatLng(49.2812, -123.1258),
     zoom: 15,
@@ -49,27 +48,6 @@ function populateMap() {
       };
     }(marker, infoWindow));
   }
-}
-
-function createMarker(coords, map, title) {
-  var marker = new google.maps.Marker({
-    position: coords,
-    map: map,
-    title: title
-  })
-
-  info = createInfoWindow(title);
-  
-  google.maps.event.addListener(marker, 'click', function() {
-    info.open(map, marker);
-  });
-}
-
-function createInfoWindow(text){
-  var infowindow = new google.maps.InfoWindow({
-    content: text
-  });
-  return infowindow;
 }
 
 function loadScript() {
