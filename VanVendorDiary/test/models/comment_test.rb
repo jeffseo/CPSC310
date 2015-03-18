@@ -26,4 +26,9 @@ class CommentTest < ActiveSupport::TestCase
     @comment.content = "a" * 201
     assert_not @comment.valid?
   end
+  
+  test "order should be most recent first" do
+    assert_equal Comment.first, comments(:most_recent)
+  end
+  
 end
