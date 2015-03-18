@@ -5,7 +5,7 @@ class CommentTest < ActiveSupport::TestCase
   def setup
     @user = users(:michael)
     # This code is not idiomatically correct.
-    @comment = Comment.new(content: "Lorem ipsum", user_id: @user.id)
+    @comment = @user.comments.build(content: "Lorem ipsum")
   end
 
   test "should be valid" do
