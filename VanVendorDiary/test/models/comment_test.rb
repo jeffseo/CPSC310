@@ -4,8 +4,8 @@ class CommentTest < ActiveSupport::TestCase
 
   def setup
     @user = users(:michael)
-    # This code is not idiomatically correct.
-    @comment = @user.comments.build(content: "Lorem ipsum")
+    @vendor = vendors(:tasty)
+    @comment = @user.comments.build(content: "Lorem ipsum", vendor_id: @vendor.id)
   end
 
   test "should be valid" do
@@ -14,6 +14,11 @@ class CommentTest < ActiveSupport::TestCase
 
   test "user id should be present" do
     @comment.user_id = nil
+    assert_not @comment.valid?
+  end
+  
+  test "vendor id should be present" do
+    @comment.vendor_id = nil
     assert_not @comment.valid?
   end
   

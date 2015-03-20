@@ -134,7 +134,10 @@ User.create!(name:  "Example User",
 end
 
 users = User.order(:created_at).take(6)
+vendor_number = 1
 50.times do
   content = Faker::Lorem.sentence(5)
-  users.each { |user| user.comments.create!(content: content) }
+  vendor = Vendor.find(vendor_number)
+  vendor_number = vendor_number + 1
+  users.each { |user| user.comments.create!(content: content, vendor_id: vendor.id) }
 end
