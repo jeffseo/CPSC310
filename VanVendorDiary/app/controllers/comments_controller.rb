@@ -9,11 +9,8 @@ class CommentsController < ApplicationController
       @comment.user = current_user
       if @comment.save
         flash[:success] = "Comment created!"
-        redirect_to @vendor, :notice => "Thanks for the comment."
-      else
-        flash[:alert] = "There is an error in your comment."
-        redirect_to @vendor, :alert => "Error!"
       end
+      redirect_to @vendor
     else
       redirect_to root_url, :alert => "You can't do that."
     end
