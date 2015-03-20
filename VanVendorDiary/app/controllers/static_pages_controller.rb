@@ -1,17 +1,17 @@
 class StaticPagesController < ApplicationController
-  def home
-  	@vendors = Vendor.order(:key)
-    @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
-    gon.vendors = @vmarkers
-  end
+	def home
+		@vendors = Vendor.order(:key)
+		@vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
+		gon.vendors = @vmarkers
+	end
 
-  def help
-  end
-  
-  def about
-  end
-  
-  def contact
-  end
+	def help
+	end
+
+	def about
+	end
+
+	def contact
+	end
 
 end

@@ -22,12 +22,6 @@ class VendorsController < ApplicationController
   def create
     @vendor = Vendor.new(vendor_params)
   end
-
-  def display
-    @vendors = Vendor.order(:key)
-    @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
-    gon.vendors = @vmarkers
-  end
   
   private
   
