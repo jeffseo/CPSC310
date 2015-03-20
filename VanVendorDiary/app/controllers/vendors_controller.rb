@@ -2,6 +2,9 @@ class VendorsController < ApplicationController
   def index
    @vendors = Vendor.paginate(page: params[:page]) 
   end
+  
+  def update
+  end
 
   def import
     @vendor = Vendor.import(params[:file])

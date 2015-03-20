@@ -9,6 +9,11 @@ class Vendor < ActiveRecord::Base
       row = Hash[[header, spreadsheet.row(i)].transpose]
       vendor = find_by_id(row["id"]) || new
       vendor.attributes = row.to_hash.select{ |k,v| allowed_attributes.include? k}
+      vendor.business_name = vendor.business_name? ? vendor.business_name : "Unknown vendor"
+      vendor.vendor_type = vendor.vendor_type? ? vendor.vendor_type : "Not specified"
+      vendor.status = vendor.status? ? vendor.status : "Not specified"
+      vendor.location = vendor.location? ? vendor.location : "Not specified"
+      vendor.description = vendor.description? ? vendor.description : "Not specified"
       if(vendor.valid?)
         vendor.save!
       end
@@ -26,6 +31,10 @@ class Vendor < ActiveRecord::Base
       vendor = find_by_id(row["id"]) || new
       vendor.attributes = row.to_hash.select{ |k,v| allowed_attributes.include? k}
       vendor.business_name = vendor.business_name? ? vendor.business_name : "Unknown vendor"
+      vendor.vendor_type = vendor.vendor_type? ? vendor.vendor_type : "Not specified"
+      vendor.status = vendor.status? ? vendor.status : "Not specified"
+      vendor.location = vendor.location? ? vendor.location : "Not specified"
+      vendor.description = vendor.description? ? vendor.description : "Not specified"
       if(vendor.valid?)
         vendor.save!
       end
