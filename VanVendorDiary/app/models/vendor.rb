@@ -1,5 +1,6 @@
 class Vendor < ActiveRecord::Base
-   validates :key, presence: true, uniqueness: true
+  has_many :comments, dependent: :destroy
+  validates :key, presence: true, uniqueness: true
   def self.import(file)
     allowed_attributes = [ "key", "vendor_type", "status", "business_name", "location", "description", "lat", "lon"]
     spreadsheet = open_spreadsheet(file)

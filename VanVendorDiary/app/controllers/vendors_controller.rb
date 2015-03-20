@@ -11,6 +11,15 @@ class VendorsController < ApplicationController
 
   def show
     @vendor = Vendor.find(params[:id])
+    @comments = @vendor.comments.paginate(page: params[:page])
+  end
+  
+  def new
+    @vendor = Vendor.new
+  end
+  
+  def create
+    @vendor = Vendor.new(vendor_params)
   end
 
   def display
@@ -18,4 +27,10 @@ class VendorsController < ApplicationController
     @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers
   end
+  
+  private
+  
+    def vendor_params
+      params.require(:vendor).permit(:key, :business_name, :location, :description, :lat, :lon)
+    end
 end
