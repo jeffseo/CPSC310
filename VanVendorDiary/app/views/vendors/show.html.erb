@@ -23,7 +23,7 @@
 </table>
 
   <%= render 'make_comment'%>
-  <%= render 'comments' %>
+  <%= render 'shared/comments', object: @vendor %>
   
 </br>
 <%= link_to "Go Back to index", vendors_path %>

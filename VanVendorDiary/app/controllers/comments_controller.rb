@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :logged_in_user, only: [:create, :destroy]
+  before_action :correct_user,   only: :destroy
 
   def create
     @vendor = Vendor.find(params[:vendor_id])
@@ -19,6 +20,9 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @comment.destroy
+    flash[:success] = "Comment deleted"
+    redirect_to request.referrer || root_url
   end
 
   private
@@ -26,4 +30,8 @@ class CommentsController < ApplicationController
       params.require(:comment).permit(:content, :user_id)
     end
     
+    def correct_user
+     @comment = current_user.comments.find_by(id: params[:id])
+     redirect_to root_url if @comment.nil?
+    end
 end

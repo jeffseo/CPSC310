@@ -1,9 +1,0 @@
-<div class="col-md-8">
-  <% if @vendor.comments.any? %>
-    <h3>Comments (<%= @vendor.comments.count %>)</h3>
-    <ol class="comments">
-      <%= render @comments %>
-    </ol>
-    <%= will_paginate @comments %>
-  <% end %>
-</div>

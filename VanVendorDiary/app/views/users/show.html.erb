@@ -10,7 +10,7 @@
     <address><%= @user.email %></address>
   </aside>
 
-  <%= render 'comments' %>
+  <%= render 'shared/comments', object: @user %>
   
   
   <div class="col-md-8">
