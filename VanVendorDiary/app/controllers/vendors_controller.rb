@@ -28,6 +28,12 @@ class VendorsController < ApplicationController
     @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers
   end
+
+  def test
+    @vendors = Vendor.test
+    flash[:success] = "database downloaded"
+    redirect_to :controller=>'static_pages', :action =>'home'
+  end
   
   private
   

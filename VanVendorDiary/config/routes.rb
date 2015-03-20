@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   get 'vendors/index'
   get 'vendors/display'
+  get 'vendors/test' => 'vendors#test'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   resources :users
