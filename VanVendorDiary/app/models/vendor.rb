@@ -20,7 +20,7 @@ class Vendor < ActiveRecord::Base
     end
   end
 
-  def self.test
+  def self.autoimport
     url = 'http://c.albert-thompson.com/assets/files/new_food_vendor_locations.xls'
     spreadsheet = Roo::Spreadsheet.open(url)
     allowed_attributes = [ "key", "vendor_type", "status", "business_name", "location", "description", "lat", "lon"]

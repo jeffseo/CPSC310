@@ -32,8 +32,8 @@ class VendorsController < ApplicationController
     gon.vendors = @vmarkers
   end
 
-  def test
-    @vendors = Vendor.test
+  def autoimport 
+    @vendors = Vendor.autoimport
     flash[:success] = "database downloaded"
     redirect_to :controller=>'static_pages', :action =>'home'
   end
