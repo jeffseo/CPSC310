@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :vendors do
     collection {post :import}
+    resources :comments, only: [:create, :destroy]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
