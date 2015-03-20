@@ -27,7 +27,6 @@ class VendorsController < ApplicationController
     @vendors = Vendor.order(:key)
     @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers
-    render :partial => display
   end
   
   private

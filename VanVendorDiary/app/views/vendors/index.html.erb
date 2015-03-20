@@ -1,7 +1,9 @@
 <h1>Vendors</h1>
-<%= form_tag import_vendors_path, multipart: true do %>
-<%= file_field_tag :file %>
-<%= submit_tag "Import" %>
+<% if current_user.admin? %>
+	<%= form_tag import_vendors_path, multipart: true do %>
+		<%= file_field_tag :file %>
+		<%= submit_tag "Import" %>
+	<% end %>
 <% end %>
 
 <% provide(:title, 'All vendors') %>
