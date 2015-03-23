@@ -1,12 +1,11 @@
 <h1>Vendors</h1>
- <%= form_tag import_vendors_path, multipart: true do %>
-   <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
-<% end %>
-
 <% provide(:title, 'All vendors') %>
 <h3>All vendors</h3>
 <%= link_to "Display all vendors", vendors_display_path %>
+<%= form_tag(vendors_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Vendors" %>
+  <%= submit_tag "Search", :name => nil %>
+<% end %>
 <%= will_paginate %>
 <ul class="vendors">
   <% @vendors.each do |vendor| %>
@@ -17,3 +16,8 @@
 </ul>
 
 <%= will_paginate %>
+
+ <%= form_tag import_vendors_path, multipart: true do %>
+   <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

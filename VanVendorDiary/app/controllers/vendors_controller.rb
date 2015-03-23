@@ -1,6 +1,10 @@
 class VendorsController < ApplicationController
   def index
-   @vendors = Vendor.paginate(page: params[:page]) 
+    if params[:search]
+      @vendors = Vendor.search(params[:search]).paginate(page: params[:page]) 
+    else 
+      @vendors = Vendor.paginate(page: params[:page]) 
+    end
   end
 
   def import
@@ -27,6 +31,9 @@ class VendorsController < ApplicationController
     @vendors = Vendor.order(:key)
     @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers
+  end
+
+  def search
   end
   
   private
