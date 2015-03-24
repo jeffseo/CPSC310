@@ -6,7 +6,7 @@ class VendorsController < ApplicationController
       @vendors = Vendor.paginate(page: params[:page]) 
     end
   end
-  
+
   def update
   end
 
