@@ -6,6 +6,9 @@ class VendorsController < ApplicationController
       @vendors = Vendor.paginate(page: params[:page]) 
     end
   end
+  
+  def update
+  end
 
   def import
     @vendor = Vendor.import(params[:file])
@@ -34,6 +37,12 @@ class VendorsController < ApplicationController
   end
 
   def search
+  end
+
+  def autoimport 
+    @vendors = Vendor.autoimport
+    flash[:success] = "database downloaded"
+    redirect_to :controller=>'static_pages', :action =>'home'
   end
   
   private
