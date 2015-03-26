@@ -1,0 +1,30 @@
+<h1>Vendors of Vancouver</h1>
+
+<center><button type="button" id="switch" onclick="switchView()">Switch to List View</button></center>
+
+<div id="map">
+  <div id="map-container">
+    <div id="map-canvas"></div>
+  </div>
+</div>
+
+<div id="list">
+  <br />
+  <table border = "1">
+    <tr>
+      <th>Business Name</th>
+      <th>Location</th>
+      <th>Description</th>
+    </tr>
+
+    <% @list_vendors.each do |v| %>
+    <tr>
+      <td><%= v.business_name %></td>
+      <td><%= v.location %></td>
+      <td><%= v.description %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+
+<script type="text/javascript">loadScript();</script>

@@ -1,19 +1,17 @@
 <h1>Vendors</h1>
- <%= form_tag import_vendors_path, multipart: true do %>
-   <%= file_field_tag :file %>
-  <%= submit_tag "Import" %>
+<% if current_user.admin? %>
+  <%= form_tag import_vendors_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import" %>
+  <% end %>
 <% end %>
 
 <% provide(:title, 'All vendors') %>
-<h3>All vendors</h3>
-<%= link_to "Display all vendors", vendors_display_path %>
 <%= will_paginate %>
 <ul class="vendors">
-  <% @vendors.each do |vendor| %>
-    <li>
-      <%= link_to  vendor.business_name, vendor %>
-    </li>
-  <% end %>
+<% @vendors.each do |vendor| %>
+  <li><%= link_to vendor.business_name, vendor %></li>
+<% end %>
 </ul>
 
 <%= will_paginate %>

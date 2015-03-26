@@ -1,8 +1,4 @@
 // code from https://github.com/NouranMahmoud/GoogleMapTut/
-$(window).load(function() {
-  loadScript();
-});
-
 var map;
 var info;
 var markers = gon.vendors;
@@ -17,7 +13,7 @@ function initialize() {
     streetViewControl: true,
     overviewMapControl: true
   };
-  
+
   // initializing map
   map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
@@ -25,6 +21,7 @@ function initialize() {
 }
 
 function populateMap() {
+  console.log("populating map");
 
   for (var i in markers) {
 
@@ -47,6 +44,8 @@ function populateMap() {
         bubble.open(map, pointer);
       };
     }(marker, infoWindow));
+
+    console.log(i);
   }
 }
 
@@ -58,4 +57,4 @@ function loadScript() {
     '&libraries=drawing'+
     '&callback=initialize';
     document.body.appendChild(script);
-  }
+}

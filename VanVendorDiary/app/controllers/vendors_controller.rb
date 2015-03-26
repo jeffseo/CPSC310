@@ -17,29 +17,23 @@ class VendorsController < ApplicationController
     @comment = current_user.comments.build if logged_in?
     @comments = @vendor.comments.paginate(page: params[:page])
   end
-  
+
   def new
     @vendor = Vendor.new
   end
-  
+
   def create
     @vendor = Vendor.new(vendor_params)
   end
 
-  def display
-    @vendors = Vendor.order(:key)
-    @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
-    gon.vendors = @vmarkers
-  end
-
-  def autoimport 
+  def autoimport
     @vendors = Vendor.autoimport
     flash[:success] = "database downloaded"
     redirect_to :controller=>'static_pages', :action =>'home'
   end
-  
+
   private
-  
+
     def vendor_params
       params.require(:vendor).permit(:key, :business_name, :location, :description, :lat, :lon)
     end
