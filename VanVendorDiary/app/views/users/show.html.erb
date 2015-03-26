@@ -6,10 +6,8 @@
         <%= gravatar_for @user %>
         <em><%= @user.name %></em>
       </h1>
-      <div class="col-md-8">
-        <address><%= @user.email %></address>
-      </div>
     </section>
+    <address><%= @user.email %></address>
     <ul class="nav nav-pills nav-stacked">
       <li role="presentation"><a href="#">Visited Vendors</a></li>
       <li role="presentation"><a href="#">Favourite Vendors</a></li>
