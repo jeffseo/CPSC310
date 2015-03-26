@@ -1,15 +1,46 @@
 <div class="center jumbotron">
   <% if logged_in? %>
-    <%= render 'shared/map' %>
+  <h1>Vendors of Vancouver</h1>
+
+  <center><button type="button" id="switch" onclick="switchView()">Switch to List View</button></center>
+
+  <div id="map">
+    <div id="map-container">
+      <div id="map-canvas"></div>
+    </div>
+  </div>
+
+  <div id="list">
     <br />
-    <center><h3><%= link_to "See Vendor Pages", vendors_path %></h3></center>
+    <table border = "1">
+      <tr>
+        <th>Business Name</th>
+        <th>Location</th>
+        <th>Description</th>
+      </tr>
+
+      <% @vendor.each do |v| %>
+      <tr>
+        <td><%= v.business_name %></td>
+        <td><%= v.location %></td>
+        <td><%= v.description %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+  
+  <script type="text/javascript">loadScript();</script>
+
+  <br />
+  <center><h3><%= link_to "See Vendor Pages", vendors_path %></h3></center>
+
   <% else %>
     <h1>Vancouver Vendor Diary</h1>
     <h2>Welcome to the visualization of <a href=" http://data.vancouver.ca/datacatalogue/foodVendors.htm"><em>Vendors of  Vancouver</em></a></h2>
     <center><%= link_to image_tag("VVD.png", alt: "Team SO logo"),
-            'https://vvd.herokuapp.com/' %></center>
+    'https://vvd.herokuapp.com/' %></center>
 
     <center><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></center>
   <% end %>
 </div>
-  
+
