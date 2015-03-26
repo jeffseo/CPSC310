@@ -8,33 +8,10 @@
       </h1>
     </section>
     <address><%= @user.email %></address>
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation"><a href="#">Visited Vendors</a></li>
+      <li role="presentation"><a href="#">Favourite Vendors</a></li>
+    </ul>
   </aside>
-
-  <%= render 'shared/comments', object: @user %>
-  
-  
-  <div class="col-md-8">
-    <h3>
-      Last check-in time: <%= Time.zone.now %>
-    </h3>
-  </div>
-  
-  <div class="col-md-8">
-    <h3>
-      <%=link_to "Visited Vendors", '#' %>
-    </h3>
-  </div>
-  
-  <div class="col-md-8">
-    <h3>
-      <%=link_to "Favourite Vendors", '#' %>
-    </h3>
-  </div>
-  
-  <div class="col-md-8">
-    <h3>
-      <%=link_to "Linked Accounts", '#' %>
-    </h3>
-  </div>
-  
+  <%= render 'shared/comments', object: @user%>
 </div>

@@ -14,15 +14,15 @@
 
   <tr>
     <td><%= @vendor.key %></td>
-    <td><%= @vendor.vendor_type%></td>
-    <td><%=@vendor.location%></td>
-    <td><%=@vendor.description%></td>
-    <td><%=@vendor.lat%></td>
-    <td><%=@vendor.lon%></td>
+    <td><%= @vendor.vendor_type %></td>
+    <td><%= @vendor.location %></td>
+    <td><%= @vendor.description %></td>
+    <td><%= @vendor.lat %></td>
+    <td><%= @vendor.lon %></td>
   </tr> 
 </table>
 
-  <%= render 'make_comment'%>
+  <%= render 'make_comment' %>
   <%= render 'shared/comments', object: @vendor %>
   
 </br>

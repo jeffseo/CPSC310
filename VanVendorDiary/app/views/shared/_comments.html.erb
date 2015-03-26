@@ -1,9 +1,9 @@
-  <div class="col-md-8">
-    <% if object.comments.any? %>
-      <h3>Comments (<%= object.comments.count %>)</h3>
-      <ol class="comments">
-        <%= render @comments %>
-      </ol>
-      <%= will_paginate @comments %>
-    <% end %>
-  </div>
+<div class="col-md-8">
+  <% if object.comments.any? %>
+    <h3>Comments (<%= object.comments.count %>)</h3>
+    <ol class="comments">
+      <%= render @comments %>
+    </ol>
+    <%= will_paginate @comments %>
+  <% end %>
+</div>

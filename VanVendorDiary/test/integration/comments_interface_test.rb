@@ -35,4 +35,18 @@ class CommentsInterfaceTest < ActionDispatch::IntegrationTest
     get user_path(users(:archer))
     assert_select 'a', text: 'delete', count: 0
   end
+  
+  test "micropost sidebar count" do
+    log_in_as(@user)
+    get vendor_path(@vendor)
+    assert_match "#{@user.comments.count} comments", response.body
+    # User with zero microposts
+    other_user = users(:mallory)
+    log_in_as(other_user)
+    get vendor_path(@vendor)
+    assert_match "0 comments", response.body
+    @vendor.comments.create!(content: "A comment", user: @user)
+    get vendor_path(@vendor)
+    assert_match "#{other_user.comments.count} comments", response.body
+  end
 end
