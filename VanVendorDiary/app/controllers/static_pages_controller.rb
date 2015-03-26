@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @vendors = Vendor.autoimport
   end
 
   def help

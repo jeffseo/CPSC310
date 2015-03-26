@@ -2,6 +2,9 @@ class VendorsController < ApplicationController
   def index
    @vendors = Vendor.paginate(page: params[:page]) 
   end
+  
+  def update
+  end
 
   def import
     @vendor = Vendor.import(params[:file])
@@ -27,6 +30,12 @@ class VendorsController < ApplicationController
     @vendors = Vendor.order(:key)
     @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers
+  end
+
+  def autoimport 
+    @vendors = Vendor.autoimport
+    flash[:success] = "database downloaded"
+    redirect_to :controller=>'static_pages', :action =>'home'
   end
   
   private
