@@ -6,34 +6,34 @@
 <div id="map">
   <p>Map of vendors parsed:</p>
   <div id="map-container">
-    <div id="map-canvas"></div>
+  <div id="map-canvas"></div>
   </div>
 </div>
 
 
 <div id="list">
-<p>List of vendors parsed:</p>
-<table border = "1">
-  <tr>
-    <th>key</th>
-    <th>vendor_type</th>
-    <th>business name</th>
-    <th>location</th>
-    <th>description</th>
-    <th>lat</th>
-    <th>lon</th>
-  </tr>
- 
-  <% @vendors.each do |vendor| %>
+  <p>List of vendors parsed:</p>
+  <table border = "1">
     <tr>
-      <td><%= vendor.key %></td>
-      <td><%= vendor.vendor_type %></td>
-      <td><%= vendor.business_name %></td>
-      <td><%= vendor.location %></td>
-      <td><%= vendor.description %></td>
-      <td><%= vendor.lat %></td>
-      <td><%= vendor.lon %></td>
+      <th>key</th>
+      <th>vendor_type</th>
+      <th>business name</th>
+      <th>location</th>
+      <th>description</th>
+      <th>lat</th>
+      <th>lon</th>
     </tr>
-  <% end %>
-</table>
+ 
+    <% @vendors.each do |vendor| %>
+      <tr>
+        <td><%= vendor.key %></td>
+        <td><%= vendor.vendor_type %></td>
+        <td><%= vendor.business_name %></td>
+        <td><%= vendor.location %></td>
+        <td><%= vendor.description %></td>
+        <td><%= vendor.lat %></td>
+        <td><%= vendor.lon %></td>
+      </tr>
+    <% end %>
+  </table>
 </div>
