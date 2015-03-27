@@ -249,3 +249,17 @@ span.picture {
     border: 0;
   }
 }
+
+/* home */
+.jumbotron {
+  margin-bottom: 0px;
+  height: 350px;
+  background:transparent;
+  a {
+    color: white;
+    &:hover {
+      color: $gray-darker;
+      background-color: transparent;
+    }
+  }
+}
