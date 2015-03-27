@@ -62,6 +62,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: white;
+  background-color: transparent;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -69,6 +70,7 @@ p {
   &:hover {
     color: white;
     text-decoration: none;
+    background-color: transparent;
   }
 }
 
@@ -82,8 +84,10 @@ footer {
   
   a {
     color: $gray;
+    background-color: transparent;
     &:hover {
       color: $gray-darker;
+      background-color: transparent;
     }
   }
   
