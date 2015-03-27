@@ -8,6 +8,19 @@ User.create!(name:  "Example User",
              activated: true,
              activated_at: Time.zone.now)
 
+vendor_num=1
+50.times do 
+Vendor.create!(key: vendor_num ,
+             vendor_type: "Fast Food",
+             status:              "open",
+             business_name: "Not specified",
+             location: "Not specified",
+             description: "Not Specified",
+             lat: "10",
+              lon: "10")
+vendor_num = vendor_num + 1
+end
+
 99.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
@@ -21,7 +34,7 @@ User.create!(name:  "Example User",
 end
 
 users = User.order(:created_at).take(6)
-vendor_number = 1
+vendor_number = 1 
 50.times do
   content = Faker::Lorem.sentence(5)
   vendor = Vendor.find(vendor_number)
