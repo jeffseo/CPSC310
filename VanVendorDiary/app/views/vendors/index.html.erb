@@ -1,4 +1,5 @@
-<h1>Vendors</h1>
+<% provide(:title, 'Vendors') %>
+<h1>All Vendors</h1>
 <% if current_user.admin? %>
   <%= form_tag import_vendors_path, multipart: true do %>
     <%= file_field_tag :file %>
