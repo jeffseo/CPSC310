@@ -1,3 +1,15 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#user_comments {
+   display: inline;
+}
+
+#user_history {
+   display: none;
+}
+
+
+#user_favourites {
+   display: none;
+}
