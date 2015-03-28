@@ -30,7 +30,6 @@ class VendorsController < ApplicationController
   def autoimport
     @vendors = Vendor.autoimport
     flash[:success] = "database downloaded"
-    redirect_to :controller=>'static_pages', :action =>'home'
   end
 
   private
