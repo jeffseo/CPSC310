@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   #omniauth
   def create2
     auth = request.env["omniauth.auth"]
-    omniauthuser = Omniauthuser.find_by_provider_and_uid(auth["provider"], auth["uid"]) || Omniauthuser.create_with_omniauth(auth)
+    omniauthuser = Omniauthuser.find_by_provider_and_uid(auth["provider"], auth["uid"]) #|| Omniauthuser.create_with_omniauth(auth)
     omniauthuser = Omniauthuser.omniauth(env['omniauth.auth'])
     session[:user_id] = omniauthuser.id
     log_in omniauthuser
