@@ -9,7 +9,12 @@ module SessionsHelper
   def current_user
     @current_user ||= User.find_by(id: session[:user_id])
   end
-  
+
+  # Returns the current omniauthuser
+  def current_omniauthuser
+    @current_omniauthuser ||= Omniauthuser.find_by(id: session[:user_id])
+  end
+
   # Returns true if the user is logged in, false otherwise.
   def logged_in?
     !current_user.nil?
