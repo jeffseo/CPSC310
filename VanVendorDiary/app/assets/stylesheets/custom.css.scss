@@ -82,8 +82,10 @@ footer {
   
   a {
     color: $gray;
+    background-color: transparent;
     &:hover {
       color: $gray-darker;
+      background-color: transparent;
     }
   }
   
@@ -245,5 +247,17 @@ span.picture {
   margin-top: 10px;
   input {
     border: 0;
+  }
+}
+
+/* home */
+.jumbotron {
+  background:transparent;
+  a {
+    color: white;
+    &:hover {
+      color: $gray-darker;
+      background-color: transparent;
+    }
   }
 }
