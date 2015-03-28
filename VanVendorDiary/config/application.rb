@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
-
+require 'roo/roo_rails_helper'
 require 'rails/all'
+require 'iconv'
 require 'omniauth'
 require 'omniauth-facebook'
 

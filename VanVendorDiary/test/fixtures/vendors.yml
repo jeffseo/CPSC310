@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+tasty: 
+  key: "0000"
+  vendor_type: vendor_food
+  status: open
+  business_name: Very Tasty
+  location: C1 Authorised Parking Meter - West Side of 400 Burrard St
+  description: Pizza
+  lat: 49.2869
+  lon: -123.118

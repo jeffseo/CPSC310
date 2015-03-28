@@ -4,8 +4,31 @@
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <em><%= @user.name %></em>
       </h1>
     </section>
+    
+    EMAIL: <address><%= @user.email %></address>
+    <div class="btn-group-vertical" role="group">
+      <button type="button" class="btn btn-default navbar-btn" onclick="userComments()">Comments</button>
+      <button type="button" class="btn btn-default navbar-btn" onclick="userHistory()">Visited Vendors</button>
+      <button type="button" class="btn btn-default navbar-btn" onclick="userFavourites()">Favourite Vendors</button>
+    </div>
   </aside>
+
+  <div id="user_comments">
+    <%= render 'shared/comments', object: @user%>
+  </div>
+
+  <div id="user_history">
+    RENDERING HISTORY
+  </div>
+
+  <div id="user_favourites">
+    RENDER FAVOURITES
+  </div>
+
+  <script type="text/javascript">loadScript();</script>
 </div>
+
+
