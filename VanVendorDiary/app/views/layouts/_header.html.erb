@@ -22,7 +22,7 @@
 					<li><%= link_to "Log in", login_path %></li>
 					<div id="user_nav">  
   						<% if current_omniauthuser %>  
-    						Welcome, <%= omniauthuser.name %>! 
+    						Welcome, <%=  %>! 
     						<%= link_to "Sign Out", log_out %>  
   						<% else %>  
       					<%= link_to "Sign in with facebook", "/auth/facebook", id: "sign_in" %>
