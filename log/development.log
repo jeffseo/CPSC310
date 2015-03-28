@@ -1,0 +1,277 @@
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms state=ready
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=1ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-28 11:39:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (8.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (20.6ms)
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=1003ms state=active
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=2003ms state=active
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=3003ms state=active
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=4003ms state=active
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=5210ms state=active
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=6005ms state=active
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=7001ms state=active
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[35mUser Load (12.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (45.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 7110ms (Views: 7054.1ms | ActiveRecord: 28.7ms)
+source=rack-timeout id=573cda18cb05044ddef04e616ae26d5b timeout=20000ms service=7860ms state=completed
+source=rack-timeout id=436872f3e0ce988d70bc41a4490f2446 timeout=20000ms state=ready
+source=rack-timeout id=436872f3e0ce988d70bc41a4490f2446 timeout=20000ms service=0ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-28 11:39:57 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 162ms (Views: 161.1ms | ActiveRecord: 0.2ms)
+source=rack-timeout id=436872f3e0ce988d70bc41a4490f2446 timeout=20000ms service=166ms state=completed
+source=rack-timeout id=a58ca27bc1202b8c23337919f8b7288a timeout=20000ms state=ready
+
+source=rack-timeout id=a58ca27bc1202b8c23337919f8b7288a timeout=20000ms service=0ms state=active
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2015-03-28 11:39:58 -0700
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  rack-timeout (0.2.1) lib/rack/timeout.rb:108:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/wei/.rvm/gems/ruby-2.1.5/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.1.5/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (31.5ms)
+source=rack-timeout id=a58ca27bc1202b8c23337919f8b7288a timeout=20000ms service=59ms state=completed
+source=rack-timeout id=fa94161b64dd50436870e3e367af0caf timeout=20000ms state=ready
+
+source=rack-timeout id=fa94161b64dd50436870e3e367af0caf timeout=20000ms service=1ms state=active
+
+Started GET "/apple-touch-icon.png" for ::1 at 2015-03-28 11:39:58 -0700
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  rack-timeout (0.2.1) lib/rack/timeout.rb:108:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `call'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /Users/wei/.rvm/gems/ruby-2.1.5/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.1.5/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (23.3ms)
+source=rack-timeout id=fa94161b64dd50436870e3e367af0caf timeout=20000ms service=45ms state=completed
+source=rack-timeout id=142dece8b4356c4e8c8536dbc2a445a0 timeout=20000ms state=ready
+source=rack-timeout id=142dece8b4356c4e8c8536dbc2a445a0 timeout=20000ms service=0ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-28 11:40:45 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (8.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_header.html.erb (25.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 208ms (Views: 196.7ms | ActiveRecord: 10.6ms)
+source=rack-timeout id=142dece8b4356c4e8c8536dbc2a445a0 timeout=20000ms service=213ms state=completed
+source=rack-timeout id=92ca54d551daf988ae8ca52ef2eaa491 timeout=20000ms state=ready
+source=rack-timeout id=92ca54d551daf988ae8ca52ef2eaa491 timeout=20000ms service=0ms state=active
+
+
+Started GET "/assets/custom-e0cd0dcd5905a8b2902a17e3fdf5aad8.css?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=92ca54d551daf988ae8ca52ef2eaa491 timeout=20000ms service=20ms state=completed
+source=rack-timeout id=8d09b66738f34bb715bf674eaaa12c7e timeout=20000ms state=ready
+source=rack-timeout id=c1aa0e922ce16c329828be1187e52cb9 timeout=20000ms state=ready
+source=rack-timeout id=fcebdd75fc57e9799ed858971bfb592a timeout=20000ms state=ready
+source=rack-timeout id=6c357e2146890a7ca8791a36e80f8cf6 timeout=20000ms state=ready
+source=rack-timeout id=79f1aa82b7371c3ab78bb89ae140d06a timeout=20000ms state=ready
+source=rack-timeout id=8d09b66738f34bb715bf674eaaa12c7e timeout=20000ms service=2ms state=active
+source=rack-timeout id=6c357e2146890a7ca8791a36e80f8cf6 timeout=20000ms service=2ms state=active
+source=rack-timeout id=79f1aa82b7371c3ab78bb89ae140d06a timeout=20000ms service=2ms state=active
+source=rack-timeout id=c1aa0e922ce16c329828be1187e52cb9 timeout=20000ms service=1ms state=active
+source=rack-timeout id=fcebdd75fc57e9799ed858971bfb592a timeout=20000ms service=2ms state=active
+
+
+Started GET "/assets/scaffolds-22c7cb9b088b526f18014131bb71079c.css?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=1f50cd0db772ffe6d12d398aaf21595e timeout=20000ms state=ready
+source=rack-timeout id=1f50cd0db772ffe6d12d398aaf21595e timeout=20000ms service=11ms state=active
+source=rack-timeout id=8d09b66738f34bb715bf674eaaa12c7e timeout=20000ms service=18ms state=completed
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=a32b0d6625c70b31558050206aecf094 timeout=20000ms state=ready
+source=rack-timeout id=c1aa0e922ce16c329828be1187e52cb9 timeout=20000ms service=27ms state=completed
+source=rack-timeout id=a32b0d6625c70b31558050206aecf094 timeout=20000ms service=1ms state=active
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=f499aa583de27b1df2fa527d07aa3769 timeout=20000ms state=ready
+source=rack-timeout id=f499aa583de27b1df2fa527d07aa3769 timeout=20000ms service=8ms state=active
+source=rack-timeout id=fcebdd75fc57e9799ed858971bfb592a timeout=20000ms service=39ms state=completed
+
+
+Started GET "/assets/application-771b506f241346215f4889e82b4bcf36.css?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=b87667d6370a165f34db42f7a6e9caca timeout=20000ms state=ready
+source=rack-timeout id=b87667d6370a165f34db42f7a6e9caca timeout=20000ms service=1ms state=active
+source=rack-timeout id=6c357e2146890a7ca8791a36e80f8cf6 timeout=20000ms service=70ms state=completed
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=a4230167fce57d0f349e7d55b65a123a timeout=20000ms state=ready
+source=rack-timeout id=a4230167fce57d0f349e7d55b65a123a timeout=20000ms service=5ms state=active
+source=rack-timeout id=79f1aa82b7371c3ab78bb89ae140d06a timeout=20000ms service=86ms state=completed
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=0d27bf8c80863ba443bfd9f29e76eec8 timeout=20000ms state=ready
+source=rack-timeout id=0d27bf8c80863ba443bfd9f29e76eec8 timeout=20000ms service=28ms state=active
+source=rack-timeout id=1f50cd0db772ffe6d12d398aaf21595e timeout=20000ms service=114ms state=completed
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=6ee3d2b9134c090b3fd067a4be84a8f7 timeout=20000ms state=ready
+source=rack-timeout id=6ee3d2b9134c090b3fd067a4be84a8f7 timeout=20000ms service=0ms state=active
+source=rack-timeout id=a32b0d6625c70b31558050206aecf094 timeout=20000ms service=103ms state=completed
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=7fbbdc05c085a528794425a5f23d8743 timeout=20000ms state=ready
+source=rack-timeout id=7fbbdc05c085a528794425a5f23d8743 timeout=20000ms service=11ms state=active
+source=rack-timeout id=f499aa583de27b1df2fa527d07aa3769 timeout=20000ms service=117ms state=completed
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=b87667d6370a165f34db42f7a6e9caca timeout=20000ms service=126ms state=completed
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=a4230167fce57d0f349e7d55b65a123a timeout=20000ms service=112ms state=completed
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=0d27bf8c80863ba443bfd9f29e76eec8 timeout=20000ms service=105ms state=completed
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=6ee3d2b9134c090b3fd067a4be84a8f7 timeout=20000ms service=79ms state=completed
+
+
+Started GET "/assets/application-2ed08b86ea4536b7a82abd4249a96b75.js?body=1" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=7fbbdc05c085a528794425a5f23d8743 timeout=20000ms service=88ms state=completed
+source=rack-timeout id=bcd393f2bfddc416711ab7c7b6a2176d timeout=20000ms state=ready
+
+
+source=rack-timeout id=bcd393f2bfddc416711ab7c7b6a2176d timeout=20000ms service=0ms state=active
+Started GET "/assets/VVD-ff9c9cda916d2d560073ae33f29bdb68.png" for ::1 at 2015-03-28 11:40:45 -0700
+source=rack-timeout id=bcd393f2bfddc416711ab7c7b6a2176d timeout=20000ms service=4ms state=completed
+source=rack-timeout id=df14d881313cf7eb4094c11dad047e0e timeout=20000ms state=ready
+source=rack-timeout id=df14d881313cf7eb4094c11dad047e0e timeout=20000ms service=1ms state=active
+
+
+Started DELETE "/logout" for ::1 at 2015-03-28 11:40:49 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QfGCcafKQsI+5UPTRIjlx4IFtFxsIhoA7R6VGjRg7IzMTB3K8tfhRURqL1fjrVwyqiZgKBWAGprAAa288ET8oQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+source=rack-timeout id=df14d881313cf7eb4094c11dad047e0e timeout=20000ms service=12ms state=completed
+source=rack-timeout id=2351ff3ec8322bb4b12d3102ccc117fa timeout=20000ms state=ready
+
+source=rack-timeout id=2351ff3ec8322bb4b12d3102ccc117fa timeout=20000ms service=0ms state=active
+
+Started GET "/" for ::1 at 2015-03-28 11:40:49 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.3ms)
+source=rack-timeout id=2351ff3ec8322bb4b12d3102ccc117fa timeout=20000ms service=128ms state=completed
+source=rack-timeout id=2740430a53ec980b14ead73bbdde5c5e timeout=20000ms state=ready
+source=rack-timeout id=2740430a53ec980b14ead73bbdde5c5e timeout=20000ms service=0ms state=active
+
+
+Started GET "/auth/facebook" for ::1 at 2015-03-28 11:40:50 -0700
+(facebook) Request phase initiated.
+source=rack-timeout id=2740430a53ec980b14ead73bbdde5c5e timeout=20000ms service=25ms state=completed
+source=rack-timeout id=074aafc80644b69903ba76be51fefc88 timeout=20000ms state=ready
+
+source=rack-timeout id=074aafc80644b69903ba76be51fefc88 timeout=20000ms service=0ms state=active
+
+Started GET "/auth/facebook" for ::1 at 2015-03-28 11:40:50 -0700
+(facebook) Request phase initiated.
+source=rack-timeout id=074aafc80644b69903ba76be51fefc88 timeout=20000ms service=18ms state=completed
+source=rack-timeout id=6532980625cb471beec610791a2a1099 timeout=20000ms state=ready
+source=rack-timeout id=6532980625cb471beec610791a2a1099 timeout=20000ms service=0ms state=active
+
+
+Started GET "/auth/facebook/callback?code=AQDFlQmazjn6plhU5bTjaXMgAAEd2CPOi8Ix8uNy31IByZc24OgkZKFCx-XjXY-Z-tZ6ultP07rrqkpP2JTRlcBu1HsfI_MhniuNKfSuukIzjM_JJuSVEldiLJqvxAtt82l7wqJ4ojkMYdrYV7lhygRjXc8FXNtZyNlC37-0OuBKAn6t3gniN3w7UTEa7EuyHlNM73bdgk-5mPkh0EWwBVG3rOTehv4YZh43Y5mBe839ImaTn91DtAUxZUjWzhI6nP6l77Ewp6Xzbn7bixatfQrmPx-dOTR3w4bSROI8hW3G2AcDw972rvmS6F8g6Ym_AOZOYHLuKelZ1rbghr870YNN&state=c0f04e34ff1c9b00e08034bc27b8ec703a29b18c5b15c35f" for ::1 at 2015-03-28 11:40:50 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#create2 as HTML
+  Parameters: {"code"=>"AQDFlQmazjn6plhU5bTjaXMgAAEd2CPOi8Ix8uNy31IByZc24OgkZKFCx-XjXY-Z-tZ6ultP07rrqkpP2JTRlcBu1HsfI_MhniuNKfSuukIzjM_JJuSVEldiLJqvxAtt82l7wqJ4ojkMYdrYV7lhygRjXc8FXNtZyNlC37-0OuBKAn6t3gniN3w7UTEa7EuyHlNM73bdgk-5mPkh0EWwBVG3rOTehv4YZh43Y5mBe839ImaTn91DtAUxZUjWzhI6nP6l77Ewp6Xzbn7bixatfQrmPx-dOTR3w4bSROI8hW3G2AcDw972rvmS6F8g6Ym_AOZOYHLuKelZ1rbghr870YNN", "state"=>"c0f04e34ff1c9b00e08034bc27b8ec703a29b18c5b15c35f", "provider"=>"facebook"}
+  [1m[36mOmniauthuser Load (4.9ms)[0m  [1mSELECT  `omniauthusers`.* FROM `omniauthusers` WHERE `omniauthusers`.`provider` = 'facebook' AND `omniauthusers`.`uid` = '10155405662215374' LIMIT 1[0m
+  [1m[35mOmniauthuser Load (0.3ms)[0m  SELECT  `omniauthusers`.* FROM `omniauthusers` WHERE `omniauthusers`.`provider` = 'facebook' AND `omniauthusers`.`uid` = '10155405662215374'  ORDER BY `omniauthusers`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 24.2ms)
+source=rack-timeout id=6532980625cb471beec610791a2a1099 timeout=20000ms service=330ms state=completed
+source=rack-timeout id=ee1dc7f22ab25242427761b0c23808d1 timeout=20000ms state=ready
+source=rack-timeout id=ee1dc7f22ab25242427761b0c23808d1 timeout=20000ms service=0ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-28 11:40:50 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 132ms (Views: 130.5ms | ActiveRecord: 0.3ms)
+source=rack-timeout id=ee1dc7f22ab25242427761b0c23808d1 timeout=20000ms service=136ms state=completed
