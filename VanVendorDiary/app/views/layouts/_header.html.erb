@@ -21,7 +21,7 @@
 				<% else %>
 					<li><%= link_to "Log in", login_path %></li>
 					<div id="user_nav">  
-  						<% if current_user %>  
+  						<% if current_omniauthuser %>  
     						Welcome, <%= omniauthuser.name %>! 
     						<%= link_to "Sign Out", log_out %>  
   						<% else %>  
