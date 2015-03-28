@@ -563,3 +563,105 @@ Processing by StaticPagesController#home as HTML
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.8ms)
 source=rack-timeout id=77da797f572329a870c4b4cd528035f8 timeout=20000ms service=136ms state=completed
+source=rack-timeout id=bdd080d9e72edc9ce3e3d1220bc9516e timeout=20000ms state=ready
+source=rack-timeout id=bdd080d9e72edc9ce3e3d1220bc9516e timeout=20000ms service=1ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-28 12:24:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_header.html.erb (44.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 270ms (Views: 241.4ms | ActiveRecord: 18.8ms)
+source=rack-timeout id=bdd080d9e72edc9ce3e3d1220bc9516e timeout=20000ms service=607ms state=completed
+source=rack-timeout id=6f584d9e1fb8353daf7f6d9fee2db376 timeout=20000ms state=ready
+source=rack-timeout id=6f584d9e1fb8353daf7f6d9fee2db376 timeout=20000ms service=0ms state=active
+
+
+Started DELETE "/logout" for ::1 at 2015-03-28 12:24:35 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YGs1wjpJoViM9e7mOCUFjnk/gFp32/5TPPTIbuPBNMzt1qp5b1QC3/Z6gmKfALx7URxULg55/skR6/DIJ+Uk4Q=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+source=rack-timeout id=6f584d9e1fb8353daf7f6d9fee2db376 timeout=20000ms service=11ms state=completed
+source=rack-timeout id=1feedbdf8585ab03a1872010072d0ef5 timeout=20000ms state=ready
+
+source=rack-timeout id=1feedbdf8585ab03a1872010072d0ef5 timeout=20000ms service=0ms state=active
+
+Started GET "/" for ::1 at 2015-03-28 12:24:35 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 151.2ms | ActiveRecord: 0.2ms)
+source=rack-timeout id=1feedbdf8585ab03a1872010072d0ef5 timeout=20000ms service=155ms state=completed
+source=rack-timeout id=c484f7cef979e2b576ac7a52b61bcea3 timeout=20000ms state=ready
+source=rack-timeout id=c484f7cef979e2b576ac7a52b61bcea3 timeout=20000ms service=0ms state=active
+
+
+Started GET "/auth/facebook" for ::1 at 2015-03-28 12:24:36 -0700
+(facebook) Request phase initiated.
+source=rack-timeout id=c484f7cef979e2b576ac7a52b61bcea3 timeout=20000ms service=17ms state=completed
+source=rack-timeout id=f654187ebecf186e18d6f743616850b5 timeout=20000ms state=ready
+
+
+Started GET "/auth/facebook" for ::1 at 2015-03-28 12:24:36 -0700
+source=rack-timeout id=f654187ebecf186e18d6f743616850b5 timeout=20000ms service=1ms state=active
+(facebook) Request phase initiated.
+source=rack-timeout id=f654187ebecf186e18d6f743616850b5 timeout=20000ms service=4ms state=completed
+source=rack-timeout id=f7d93d44cdcc95f1ac486219749191a4 timeout=20000ms state=ready
+source=rack-timeout id=f7d93d44cdcc95f1ac486219749191a4 timeout=20000ms service=0ms state=active
+
+
+Started GET "/auth/facebook/callback?code=AQCWj4qSuITQK58Z7S1SliejIzGRbhrTja38RZ90yqYKl7dPy9BF9E_lfHf0NMS9KALScpfCagbhWz70cybudz7KhrO4Zb0qArtBvvw9FPF4E7fZhhUNR8th_OUEDlcCFxBtybkoHHd_-1R_N8fV5ITKfP6vmZ9M0Wjt_GYrgkIEqTc-onIzhOS6-QVbk71rvRxIlJOIFX_53HGYru9VJlqFq5kK3YNFzu8xFCR8loVAFdAPLHOYV9LP9dnkY_D9KeScXmrpJzioyu7v9FTckY38skYzM-jCJ26w6HXZGY1UUPN2qGOA_1ddsRaFKFc-bcVGvio7nyBse8sf_DPkjh84&state=11fc13a5c750ca38c2aa46b0784ea256941ebd49cc50a289" for ::1 at 2015-03-28 12:24:36 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#create2 as HTML
+  Parameters: {"code"=>"AQCWj4qSuITQK58Z7S1SliejIzGRbhrTja38RZ90yqYKl7dPy9BF9E_lfHf0NMS9KALScpfCagbhWz70cybudz7KhrO4Zb0qArtBvvw9FPF4E7fZhhUNR8th_OUEDlcCFxBtybkoHHd_-1R_N8fV5ITKfP6vmZ9M0Wjt_GYrgkIEqTc-onIzhOS6-QVbk71rvRxIlJOIFX_53HGYru9VJlqFq5kK3YNFzu8xFCR8loVAFdAPLHOYV9LP9dnkY_D9KeScXmrpJzioyu7v9FTckY38skYzM-jCJ26w6HXZGY1UUPN2qGOA_1ddsRaFKFc-bcVGvio7nyBse8sf_DPkjh84", "state"=>"11fc13a5c750ca38c2aa46b0784ea256941ebd49cc50a289", "provider"=>"facebook"}
+  [1m[36mOmniauthuser Load (0.3ms)[0m  [1mSELECT  `omniauthusers`.* FROM `omniauthusers` WHERE `omniauthusers`.`provider` = 'facebook' AND `omniauthusers`.`uid` = '10155405662215374' LIMIT 1[0m
+  [1m[35mOmniauthuser Load (0.3ms)[0m  SELECT  `omniauthusers`.* FROM `omniauthusers` WHERE `omniauthusers`.`provider` = 'facebook' AND `omniauthusers`.`uid` = '10155405662215374'  ORDER BY `omniauthusers`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (ActiveRecord: 18.9ms)
+source=rack-timeout id=f7d93d44cdcc95f1ac486219749191a4 timeout=20000ms service=821ms state=completed
+source=rack-timeout id=cb7d6a7716c9558f2edaffe128e61196 timeout=20000ms state=ready
+source=rack-timeout id=cb7d6a7716c9558f2edaffe128e61196 timeout=20000ms service=0ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-28 12:24:37 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.3ms)
+source=rack-timeout id=cb7d6a7716c9558f2edaffe128e61196 timeout=20000ms service=101ms state=completed
+source=rack-timeout id=cbe598d40232e2da2ac871ae38fd9263 timeout=20000ms state=ready
+source=rack-timeout id=cbe598d40232e2da2ac871ae38fd9263 timeout=20000ms service=0ms state=active
+
+
+Started DELETE "/logout" for ::1 at 2015-03-28 12:24:40 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"o1KrkKwkB1ohM4IK26d3lT7pdpCtCtI7cnfZ3++2t1Eu7zQr+Tmk3Vu87o58gs5gFsqi5NSo0qFfaOF5K5KnfA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+source=rack-timeout id=cbe598d40232e2da2ac871ae38fd9263 timeout=20000ms service=4ms state=completed
+source=rack-timeout id=54bc5ce7b90676a959272ad78a9cf840 timeout=20000ms state=ready
+
+
+Started GET "/" for ::1 at 2015-03-28 12:24:40 -0700
+source=rack-timeout id=54bc5ce7b90676a959272ad78a9cf840 timeout=20000ms service=2ms state=active
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 137ms (Views: 136.5ms | ActiveRecord: 0.2ms)
+source=rack-timeout id=54bc5ce7b90676a959272ad78a9cf840 timeout=20000ms service=141ms state=completed
