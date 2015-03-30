@@ -33,8 +33,6 @@ Vendor.create!(key:           vendor_num ,
 vendor_num = vendor_num + 1
 end
 
-
-
 users = User.order(:created_at).take(6)
 vendor_num = 1 
 50.times do
