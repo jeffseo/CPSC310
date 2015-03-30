@@ -4,8 +4,8 @@
     <br />
     <center><h3><%= link_to "See Vendor Pages", vendors_path %></h3></center>
     <%= form_tag(root_path, :method => "get", id: "search-form") do %>
-        <%= text_field_tag :search, params[:search], placeholder: "Search Vendors" %>
-        <%= submit_tag "Search", :name => nil %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Vendors" %>
+      <%= submit_tag "Search", :name => nil %>
     <% end %>
         
   <% else %>

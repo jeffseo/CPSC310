@@ -38,7 +38,7 @@ class VendorsController < ApplicationController
   end
 
   def search
-      @vendors = Vendor.search(params[:search])
+    @vendors = Vendor.search(params[:search])
   end
 
   def autoimport 
