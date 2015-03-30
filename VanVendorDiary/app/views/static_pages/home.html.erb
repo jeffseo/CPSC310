@@ -3,6 +3,11 @@
     <%= render 'shared/map' %>
     <br />
     <center><h3><%= link_to "See Vendor Pages", vendors_path %></h3></center>
+    <%= form_tag(root_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Vendors" %>
+      <%= submit_tag "Search", :name => nil %>
+    <% end %>
+        
   <% else %>
     <h1>Vancouver Vendor Diary</h1>
     <h2>Welcome to the visualization of <a href=" http://data.vancouver.ca/datacatalogue/foodVendors.htm"><em>Vendors of  Vancouver</em></a></h2>

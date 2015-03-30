@@ -49,4 +49,9 @@ class Vendor < ActiveRecord::Base
     else raise "Unknown file type: #{file.original_filename}"
     end
   end
+
+  def self.search(query)
+    where("description ilike ? OR business_name ilike ? or status ilike ? or location ilike ?","%#{query}%","%#{query}%", "%#{query}%","%#{query}%")
+  end
+
 end
