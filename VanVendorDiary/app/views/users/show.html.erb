@@ -7,34 +7,28 @@
         <em><%= @user.name %></em>
       </h1>
     </section>
-    <address><%= @user.email %></address>
+    
+    EMAIL: <address><%= @user.email %></address>
+    <div class="btn-group-vertical" role="group">
+      <button type="button" class="btn btn-default navbar-btn" onclick="userComments()">Comments</button>
+      <button type="button" class="btn btn-default navbar-btn" onclick="userHistory()">Visited Vendors</button>
+      <button type="button" class="btn btn-default navbar-btn" onclick="userFavourites()">Favourite Vendors</button>
+    </div>
   </aside>
 
-  <%= render 'shared/comments', object: @user %>
-  
-  
-  <div class="col-md-8">
-    <h3>
-      Last check-in time: <%= Time.zone.now %>
-    </h3>
+  <div id="user_comments">
+    <%= render 'shared/comments', object: @user%>
   </div>
-  
-  <div class="col-md-8">
-    <h3>
-      <%=link_to "Visited Vendors", '#' %>
-    </h3>
+
+  <div id="user_history">
+    RENDERING HISTORY
   </div>
-  
-  <div class="col-md-8">
-    <h3>
-      <%=link_to "Favourite Vendors", '#' %>
-    </h3>
+
+  <div id="user_favourites">
+    RENDER FAVOURITES
   </div>
-  
-  <div class="col-md-8">
-    <h3>
-      <%=link_to "Linked Accounts", '#' %>
-    </h3>
-  </div>
-  
+
+  <script type="text/javascript">loadScript();</script>
 </div>
+
+

@@ -1,7 +1,12 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "Vancouver Vendor Diary", root_path , id: "logo" %>
-    <nav>
+    <button class ="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+      <span class = "icon-bar"></span>
+      <span class = "icon-bar"></span>
+      <span class = "icon-bar"></span>
+    </button>
+    <div class = "collapse navbar-collapse navHeaderCollapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
@@ -22,6 +27,6 @@
           <li><%= link_to "Log in", login_path %></li>
         <% end %>
       </ul>
-    </nav>
+    </div>
   </div>
 </header>
