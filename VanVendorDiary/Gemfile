@@ -59,8 +59,10 @@ gem 'tzinfo-data'
 
 gem 'rack-timeout'
 
-#
+# Added for admin user
 gem 'activeadmin', github: 'activeadmin'
+# Added to manage environment variable.
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
