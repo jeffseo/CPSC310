@@ -1,7 +1,11 @@
 class VendorsController < ApplicationController
   before_action :logged_in_user, only: [:index, :update, :import, :autoimport]
   def index
-   @vendors = Vendor.paginate(page: params[:page]) 
+    if params[:search]
+      @vendors = Vendor.search(params[:search]).paginate(page: params[:page]) 
+    else 
+      @vendors = Vendor.paginate(page: params[:page]) 
+    end
   end
   
   def show
@@ -27,7 +31,17 @@ class VendorsController < ApplicationController
     @vendor = Vendor.new(vendor_params)
   end
 
-  def autoimport
+  def display
+    @vendors = Vendor.order(:key)
+    @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
+    gon.vendors = @vmarkers
+  end
+
+  def search
+    @vendors = Vendor.search(params[:search])
+  end
+
+  def autoimport 
     @vendors = Vendor.autoimport
     flash[:success] = "database downloaded"
     redirect_to :controller=>'static_pages', :action =>'home'
