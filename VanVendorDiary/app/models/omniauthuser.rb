@@ -8,18 +8,17 @@ class Omniauthuser < ActiveRecord::Base
   # end  
 
 	def self.from_omniauth(auth)  
-    find_by_provider_and_uid(auth["provider"], auth["uid"])# || create_with_omniauth(auth)  
+    		find_by_provider_and_uid(auth["provider"], auth["uid"])# || create_with_omniauth(auth)  
   	end  
 
 	def self.omniauth(auth)
-   	where(provider: auth.provider, uid: auth.uid).first_or_create do |omniauthuser|
-      omniauthuser.provider = auth.provider
-      omniauthuser.uid = auth.uid
-      omniauthuser.name = auth.info.name
-      omniauthuser.image = auth.info.image
-      omniauthuser.token = auth.credentials.token
-   #   omniauthuser.expires_at = Time.at(auth.credentials.expires_at)
-      omniauthuser.save!
+   		where(provider: auth.provider, uid: auth.uid).first_or_create do |omniauthuser|
+      		omniauthuser.provider = auth.provider
+      		omniauthuser.uid = auth.uid
+		omniauthuser.name = auth.info.name
+	 	omniauthuser.image = auth.info.image
+      		omniauthuser.token = auth.credentials.token
+      		omniauthuser.save!
     end
   end
 end
