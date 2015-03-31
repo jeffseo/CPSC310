@@ -11,15 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150313080547) do
+ActiveRecord::Schema.define(version: 20150318055058) do
 
-  create_table "authorizations", force: :cascade do |t|
-    t.string   "provider",   limit: 255
-    t.string   "uid",        limit: 255
-    t.string   "user",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+  create_table "comments", force: :cascade do |t|
+    t.text     "content",    limit: 65535
+    t.integer  "user_id",    limit: 4
+    t.integer  "vendor_id",  limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
+
+  add_index "comments", ["user_id", "created_at"], name: "index_comments_on_user_id_and_created_at", using: :btree
+  add_index "comments", ["vendor_id", "created_at"], name: "index_comments_on_vendor_id_and_created_at", using: :btree
 
   create_table "omniauthusers", force: :cascade do |t|
     t.string   "provider",   limit: 255
@@ -32,26 +35,17 @@ ActiveRecord::Schema.define(version: 20150313080547) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name",                   limit: 255
-    t.string   "email",                  limit: 255
-    t.datetime "created_at",                                         null: false
-    t.datetime "updated_at",                                         null: false
-    t.string   "password_digest",        limit: 255
-    t.string   "encrypted_password",     limit: 255, default: "",    null: false
-    t.string   "reset_password_token",   limit: 255
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          limit: 4,   default: 0,     null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip",     limit: 255
-    t.string   "last_sign_in_ip",        limit: 255
-    t.string   "remember_digest",        limit: 255
-    t.boolean  "admin",                  limit: 1,   default: false
-    t.string   "activation_digest",      limit: 255
-    t.boolean  "activated",              limit: 1,   default: false
+    t.string   "name",              limit: 255
+    t.string   "email",             limit: 255
+    t.datetime "created_at",                                    null: false
+    t.datetime "updated_at",                                    null: false
+    t.string   "password_digest",   limit: 255
+    t.string   "remember_digest",   limit: 255
+    t.boolean  "admin",             limit: 1,   default: false
+    t.string   "activation_digest", limit: 255
+    t.boolean  "activated",         limit: 1,   default: false
     t.datetime "activated_at"
-    t.string   "reset_digest",           limit: 255
+    t.string   "reset_digest",      limit: 255
     t.datetime "reset_sent_at"
   end
 
@@ -70,4 +64,5 @@ ActiveRecord::Schema.define(version: 20150313080547) do
     t.datetime "updated_at",                null: false
   end
 
+  add_foreign_key "comments", "users"
 end

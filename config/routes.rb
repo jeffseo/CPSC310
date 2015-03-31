@@ -1,19 +1,24 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
-  #omniauth
-  get 'auth/:provider/callback', to: 'sessions#create2'
-  get 'logout', to: 'sessions#destroy'
-
   root 'static_pages#home'
   get 'help' => 'static_pages#help'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
+  get 'display' => 'static_pages#display'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
+  get 'vendors/index'
+  get 'vendors/autoimport' => 'vendors#autoimport'
+  get 'auth/:provider/callback', to: 'sessions#create2'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   resources :users
+  resources :account_activations, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]
+  resources :vendors do
+    collection {post :import}
+    resources :comments, only: [:create, :destroy]
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

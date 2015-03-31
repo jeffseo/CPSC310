@@ -1,0 +1,11 @@
+<div class="col-md-8">
+  <h3>Comments (<%= object.comments.count %>)</h3>
+  <% if object.comments.any? %>
+    <ol class="comments">
+      <%= render @comments %>
+    </ol>
+    <%= will_paginate @comments %>
+  <% else %>
+    Explore the map and have something delicious! Leave a comment if your stomach is as happy as you are :)
+  <% end %>
+</div>
