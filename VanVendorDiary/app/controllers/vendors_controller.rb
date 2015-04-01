@@ -1,17 +1,9 @@
 class VendorsController < ApplicationController
+  before_action :logged_in_user, only: [:index, :update, :import, :autoimport]
   def index
    @vendors = Vendor.paginate(page: params[:page]) 
   end
   
-  def update
-  end
-
-  def import
-    @vendor = Vendor.import(params[:file])
-    flash[:success] = "file imported"
-    redirect_to :controller=>'vendors', :action =>'index'
-  end
-
   def show
     @vendor = Vendor.find(params[:id])
     @comment = current_user.comments.build if logged_in?
@@ -20,6 +12,15 @@ class VendorsController < ApplicationController
 
   def new
     @vendor = Vendor.new
+  end
+
+  def update
+  end
+
+  def import
+    @vendor = Vendor.import(params[:file])
+    flash[:success] = "file imported"
+    redirect_to :controller=>'vendors', :action =>'index'
   end
 
   def create
