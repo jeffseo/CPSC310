@@ -21768,3 +21768,1385 @@ Processing by StaticPagesController#home as HTML
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 756ms (Views: 159.1ms | ActiveRecord: 30.0ms)
 source=rack-timeout id=7206d3b76c24d4d6b532f290dc04058f timeout=20000ms service=760ms state=completed
+source=rack-timeout id=d346015ac27c71238e1376761137c6e0 timeout=20000ms state=ready
+
+source=rack-timeout id=d346015ac27c71238e1376761137c6e0 timeout=20000ms service=1ms state=active
+
+Started GET "/" for ::1 at 2015-03-31 20:23:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticPagesController#home as HTML
+source=rack-timeout id=d346015ac27c71238e1376761137c6e0 timeout=20000ms service=1003ms state=active
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C15' LIMIT 1[0m
+  [1m[35mCACHE (0.4ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C3' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C4' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C7' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C8' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C9' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT24' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV136' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV137' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV138' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV139' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD04' LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT22' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT23' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT26' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT28' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT31' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT32' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT35' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT37' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT38' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT39' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT40' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT41' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT42' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT45' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT46' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT47' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT48' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT49' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT50' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT51' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT52' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT53' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT54' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT55' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT56' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT57' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT59' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT60' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT61' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT63' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT64' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT70' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT71' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT72' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT74' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT75' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GT07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GTBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD09' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'RSBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV140' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV142' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT58' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT73' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT67' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT66' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT77' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT65' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT78' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mVendor Load (0.9ms)[0m  [1mSELECT `vendors`.* FROM `vendors`  ORDER BY `vendors`.`key` ASC[0m
+  Rendered shared/_map.html.erb (7.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (47.5ms)
+  [1m[35mVendor Load (0.4ms)[0m  SELECT `vendors`.`business_name`, `vendors`.`location`, `vendors`.`description`, `vendors`.`lat`, `vendors`.`lon` FROM `vendors`
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1918ms (Views: 310.0ms | ActiveRecord: 50.6ms)
+source=rack-timeout id=d346015ac27c71238e1376761137c6e0 timeout=20000ms service=1995ms state=completed
+source=rack-timeout id=b6edabf50bf1d5f740678061f924843b timeout=20000ms state=ready
+
+
+Started GET "/assets/account_activations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 20:23:56 -0700
+source=rack-timeout id=b6edabf50bf1d5f740678061f924843b timeout=20000ms service=9ms state=active
+source=rack-timeout id=b6edabf50bf1d5f740678061f924843b timeout=20000ms service=24ms state=completed
+source=rack-timeout id=0744f47fdac7215288bdcbd15d8bf38c timeout=20000ms state=ready
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 20:23:56 -0700
+source=rack-timeout id=0744f47fdac7215288bdcbd15d8bf38c timeout=20000ms service=11ms state=active
+source=rack-timeout id=18bba0a29234fdadf5fd62c91a5e7a14 timeout=20000ms state=ready
+source=rack-timeout id=18bba0a29234fdadf5fd62c91a5e7a14 timeout=20000ms service=12ms state=active
+source=rack-timeout id=a7775670169014ccf85164b7f6676c21 timeout=20000ms state=ready
+source=rack-timeout id=5d74f2c4163c469e9e034d1389cc526e timeout=20000ms state=ready
+source=rack-timeout id=0744f47fdac7215288bdcbd15d8bf38c timeout=20000ms service=25ms state=completed
+source=rack-timeout id=a7775670169014ccf85164b7f6676c21 timeout=20000ms service=1ms state=active
+source=rack-timeout id=5d74f2c4163c469e9e034d1389cc526e timeout=20000ms service=1ms state=active
+
+
+Started GET "/assets/password_resets-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 20:23:56 -0700
+source=rack-timeout id=18bba0a29234fdadf5fd62c91a5e7a14 timeout=20000ms service=18ms state=completed
+
+
+Started GET "/assets/vendors-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 20:23:56 -0700
+source=rack-timeout id=a7775670169014ccf85164b7f6676c21 timeout=20000ms service=12ms state=completed
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 20:23:56 -0700
+source=rack-timeout id=5d74f2c4163c469e9e034d1389cc526e timeout=20000ms service=19ms state=completed
+source=rack-timeout id=3b97aaa3be87e2bb5e3f903f5a6e7228 timeout=20000ms state=ready
+source=rack-timeout id=3b97aaa3be87e2bb5e3f903f5a6e7228 timeout=20000ms service=9ms state=active
+
+
+Started DELETE "/logout" for ::1 at 2015-03-31 20:23:59 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6NZ1YNrKSkA3LeYQFkd9FsyzDhxCVOJZCY4eFKJd6c8AefXXJNolRlv2ATfQLWkrDSEcCOXOOvexFK+t0O65WQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+source=rack-timeout id=3b97aaa3be87e2bb5e3f903f5a6e7228 timeout=20000ms service=23ms state=completed
+source=rack-timeout id=57cf5499d61a59574c68cd211afe32d0 timeout=20000ms state=ready
+
+source=rack-timeout id=57cf5499d61a59574c68cd211afe32d0 timeout=20000ms service=0ms state=active
+
+Started GET "/" for ::1 at 2015-03-31 20:23:59 -0700
+Processing by StaticPagesController#home as HTML
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C3' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C4' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C7' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C8' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C9' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT24' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV136' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV137' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV138' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV139' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT22' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT23' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT26' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT28' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT31' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT32' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT35' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT37' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT38' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT39' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT40' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT41' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT42' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT45' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT46' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT47' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT48' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT49' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT50' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT51' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT52' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT53' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT54' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT55' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT56' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT57' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT59' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT60' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT61' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT63' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT64' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT70' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT71' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT72' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT74' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT75' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GT07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GTBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD09' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'RSBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV140' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV142' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT58' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT73' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT67' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT66' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT77' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT65' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT78' LIMIT 1[0m
+  [1m[35mOmniauthuser Load (0.3ms)[0m  SELECT  `omniauthusers`.* FROM `omniauthusers` WHERE `omniauthusers`.`id` IS NULL LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (34.7ms)
+  [1m[36mVendor Load (0.4ms)[0m  [1mSELECT `vendors`.`business_name`, `vendors`.`location`, `vendors`.`description`, `vendors`.`lat`, `vendors`.`lon` FROM `vendors`[0m
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 780ms (Views: 154.6ms | ActiveRecord: 47.1ms)
+source=rack-timeout id=57cf5499d61a59574c68cd211afe32d0 timeout=20000ms service=785ms state=completed
+source=rack-timeout id=2d19a978e4f87a5114913d3f6406b539 timeout=20000ms state=ready
+source=rack-timeout id=2d19a978e4f87a5114913d3f6406b539 timeout=20000ms service=0ms state=active
+
+
+Started GET "/auth/facebook" for ::1 at 2015-03-31 20:24:02 -0700
+(facebook) Request phase initiated.
+source=rack-timeout id=2d19a978e4f87a5114913d3f6406b539 timeout=20000ms service=18ms state=completed
+source=rack-timeout id=8d0e9292cad7b8f45bf15348f5c5b401 timeout=20000ms state=ready
+source=rack-timeout id=8d0e9292cad7b8f45bf15348f5c5b401 timeout=20000ms service=0ms state=active
+
+
+Started GET "/auth/facebook/callback?code=AQC6Z34lVvnlsvv3ioTrUVP0CyWsh8UzJtiBcd3s7LUECsFAHw7uv403eoTY4k2F8KlTTVdZWewCEvyOc6BNkuIKfw3ix74fL6tW08gYSbSRfRKQqSgS0vrbvCwQzm9C9zqhZW8qJVGMonnotSKtZnmpAU0qBVa6aOfjlqYoQ_hDFS2n0P2BE30OzT5iZplq6kQVKRy17ikQhlsFk57eDdMNfvcRe0jS7BqzbdlYf74je3sEVxbW9GusLROQjJ5wxkj17ajFmE3X8DPGJfe8m0LWYdYhsAILwQNtBeTSnSde42EonISGzytbvEILF8hiU0k&state=839cf4b4b7e5092919b835c27f0719b448ef7a793242f1b5" for ::1 at 2015-03-31 20:24:02 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#facebookcreate as HTML
+  Parameters: {"code"=>"AQC6Z34lVvnlsvv3ioTrUVP0CyWsh8UzJtiBcd3s7LUECsFAHw7uv403eoTY4k2F8KlTTVdZWewCEvyOc6BNkuIKfw3ix74fL6tW08gYSbSRfRKQqSgS0vrbvCwQzm9C9zqhZW8qJVGMonnotSKtZnmpAU0qBVa6aOfjlqYoQ_hDFS2n0P2BE30OzT5iZplq6kQVKRy17ikQhlsFk57eDdMNfvcRe0jS7BqzbdlYf74je3sEVxbW9GusLROQjJ5wxkj17ajFmE3X8DPGJfe8m0LWYdYhsAILwQNtBeTSnSde42EonISGzytbvEILF8hiU0k", "state"=>"839cf4b4b7e5092919b835c27f0719b448ef7a793242f1b5", "provider"=>"facebook"}
+  [1m[35mOmniauthuser Load (0.3ms)[0m  SELECT  `omniauthusers`.* FROM `omniauthusers` WHERE `omniauthusers`.`provider` = 'facebook' AND `omniauthusers`.`uid` = '10155405662215374' LIMIT 1
+  [1m[36mOmniauthuser Load (0.3ms)[0m  [1mSELECT  `omniauthusers`.* FROM `omniauthusers` WHERE `omniauthusers`.`provider` = 'facebook' AND `omniauthusers`.`uid` = '10155405662215374'  ORDER BY `omniauthusers`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+source=rack-timeout id=8d0e9292cad7b8f45bf15348f5c5b401 timeout=20000ms service=347ms state=completed
+source=rack-timeout id=69d43bb41d212cdc2c6a77f2bd58e3c0 timeout=20000ms state=ready
+source=rack-timeout id=69d43bb41d212cdc2c6a77f2bd58e3c0 timeout=20000ms service=0ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-31 20:24:02 -0700
+Processing by StaticPagesController#home as HTML
+  [1m[35mVendor Load (0.3ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C3' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C4' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C7' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C8' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C9' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT24' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV136' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV137' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV138' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV139' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT22' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT23' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT26' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT28' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT31' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT32' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT35' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT37' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT38' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT39' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT40' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT41' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT42' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT45' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT46' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT47' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT48' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT49' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT50' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT51' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT52' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT53' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT54' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT55' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT56' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT57' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT59' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT60' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT61' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT63' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT64' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT70' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT71' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT72' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT74' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT75' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GT07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GTBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD09' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'RSBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV140' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV142' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT58' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT73' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT67' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT66' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT77' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT65' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT78' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mVendor Load (0.6ms)[0m  [1mSELECT `vendors`.* FROM `vendors`  ORDER BY `vendors`.`key` ASC[0m
+  Rendered shared/_map.html.erb (4.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.6ms)
+  [1m[35mVendor Load (0.3ms)[0m  SELECT `vendors`.`business_name`, `vendors`.`location`, `vendors`.`description`, `vendors`.`lat`, `vendors`.`lon` FROM `vendors`
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 775ms (Views: 146.0ms | ActiveRecord: 28.9ms)
+source=rack-timeout id=69d43bb41d212cdc2c6a77f2bd58e3c0 timeout=20000ms service=779ms state=completed
+source=rack-timeout id=5aaba714ee2cd0ad4c26b5ed5afd74e0 timeout=20000ms state=ready
+
+source=rack-timeout id=5aaba714ee2cd0ad4c26b5ed5afd74e0 timeout=20000ms service=0ms state=active
+
+Started GET "/vendors" for ::1 at 2015-03-31 20:24:09 -0700
+Processing by VendorsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `vendors`
+  [1m[36mVendor Load (0.3ms)[0m  [1mSELECT  `vendors`.* FROM `vendors` LIMIT 30 OFFSET 0[0m
+  Rendered vendors/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 166ms (Views: 164.3ms | ActiveRecord: 0.8ms)
+source=rack-timeout id=5aaba714ee2cd0ad4c26b5ed5afd74e0 timeout=20000ms service=176ms state=completed
+source=rack-timeout id=4c828cef90bcb0b372b9f87e992f053c timeout=20000ms state=ready
+source=rack-timeout id=4c828cef90bcb0b372b9f87e992f053c timeout=20000ms service=8ms state=active
+
+
+Started GET "/vendors/25" for ::1 at 2015-03-31 20:24:11 -0700
+Processing by VendorsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mVendor Load (0.3ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` = 25 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_info.html.erb (5.8ms)
+  Rendered vendors/_make_comment.html.erb (8.0ms)
+  Rendered vendors/show.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined method `downcase' for nil:NilClass):
+    1: <%= link_to gravatar_for(current_user, size: 50), current_user %>
+    2: <h1><%= current_user.name %></h1>
+    3: <span><%= link_to "view my profile", current_user %></span>
+    4: <span><%= pluralize(current_user.comments.count, "comment") %></span>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/shared/_user_info.html.erb:1:in `_app_views_shared__user_info_html_erb__2691784363740013986_70208420623840'
+  app/views/vendors/_make_comment.html.erb:4:in `_app_views_vendors__make_comment_html_erb__3695099214706878136_70208420655880'
+  app/views/vendors/show.html.erb:25:in `_app_views_vendors_show_html_erb__1636249085255871875_70208420737200'
+
+
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.0ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.2ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (102.0ms)
+source=rack-timeout id=4c828cef90bcb0b372b9f87e992f053c timeout=20000ms service=500ms state=completed
+source=rack-timeout id=4fe4068332c5d1d9bc05d373f5fc252d timeout=20000ms state=ready
+source=rack-timeout id=4fe4068332c5d1d9bc05d373f5fc252d timeout=20000ms service=0ms state=active
+
+
+Started GET "/vendors/25" for ::1 at 2015-03-31 20:24:12 -0700
+Processing by VendorsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` = 25 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_user_info.html.erb (2.3ms)
+  Rendered vendors/_make_comment.html.erb (3.4ms)
+  Rendered vendors/show.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `downcase' for nil:NilClass):
+    1: <%= link_to gravatar_for(current_user, size: 50), current_user %>
+    2: <h1><%= current_user.name %></h1>
+    3: <span><%= link_to "view my profile", current_user %></span>
+    4: <span><%= pluralize(current_user.comments.count, "comment") %></span>
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/shared/_user_info.html.erb:1:in `_app_views_shared__user_info_html_erb__2691784363740013986_70208423824800'
+  app/views/vendors/_make_comment.html.erb:4:in `_app_views_vendors__make_comment_html_erb__3695099214706878136_70208423888640'
+  app/views/vendors/show.html.erb:25:in `_app_views_vendors_show_html_erb__1636249085255871875_70208420452480'
+
+
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.8ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (36.7ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (85.7ms)
+source=rack-timeout id=4fe4068332c5d1d9bc05d373f5fc252d timeout=20000ms service=391ms state=completed
+source=rack-timeout id=59deaad73b7f454cf2c8a09b3e189940 timeout=20000ms state=ready
+source=rack-timeout id=59deaad73b7f454cf2c8a09b3e189940 timeout=20000ms service=0ms state=active
+
+
+Started GET "/" for ::1 at 2015-03-31 20:24:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C3' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C4' LIMIT 1[0m
+  [1m[35mCACHE (0.2ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C7' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C8' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C9' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT24' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV136' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV137' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV138' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV139' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT22' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT23' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT26' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT28' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT31' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT32' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT35' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT37' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT38' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT39' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT40' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT41' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT42' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT45' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT46' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT47' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT48' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT49' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT50' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT51' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT52' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT53' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT54' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT55' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT56' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT57' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT59' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT60' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT61' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT63' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT64' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT70' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT71' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT72' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT74' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT75' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+source=rack-timeout id=59deaad73b7f454cf2c8a09b3e189940 timeout=20000ms service=1001ms state=active
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM17' LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GT07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GTBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD09' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'RSBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV140' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV142' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT58' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT73' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT67' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT66' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT77' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT65' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT78' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mVendor Load (0.7ms)[0m  [1mSELECT `vendors`.* FROM `vendors`  ORDER BY `vendors`.`key` ASC[0m
+  Rendered shared/_map.html.erb (5.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (45.7ms)
+  [1m[35mVendor Load (0.3ms)[0m  SELECT `vendors`.`business_name`, `vendors`.`location`, `vendors`.`description`, `vendors`.`lat`, `vendors`.`lon` FROM `vendors`
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1398ms (Views: 348.4ms | ActiveRecord: 52.0ms)
+source=rack-timeout id=59deaad73b7f454cf2c8a09b3e189940 timeout=20000ms service=1474ms state=completed
+source=rack-timeout id=d416a6a43e74937f1aee9e49faddd07b timeout=20000ms state=ready
+
+source=rack-timeout id=d416a6a43e74937f1aee9e49faddd07b timeout=20000ms service=8ms state=active
+
+Started GET "/users" for ::1 at 2015-03-31 20:24:41 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` LIMIT 30 OFFSET 0[0m
+  Rendered users/_user.html.erb (7.5ms)
+  Rendered users/index.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `downcase' for nil:NilClass):
+    1: <li>
+    2:   <%= gravatar_for user, size: 50 %>
+    3:   <%= link_to user.name, user %>
+    4:   <% if current_user.admin? && !current_user?(user) %>
+    5:     | <%= link_to "delete", user, method: :delete,
+  app/helpers/users_helper.rb:5:in `gravatar_for'
+  app/views/users/_user.html.erb:2:in `_app_views_users__user_html_erb___1991173819289433542_70316568241600'
+  app/views/users/index.html.erb:8:in `block in _app_views_users_index_html_erb___144365604422231794_70316556294420'
+  app/views/users/index.html.erb:7:in `_app_views_users_index_html_erb___144365604422231794_70316556294420'
+
+
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.1ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (45.6ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/wei/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (97.5ms)
+source=rack-timeout id=d416a6a43e74937f1aee9e49faddd07b timeout=20000ms service=428ms state=completed
+source=rack-timeout id=9850f6c9b1cfebdb418a4777b411b820 timeout=20000ms state=ready
+
+
+Started GET "/" for ::1 at 2015-03-31 20:24:55 -0700
+source=rack-timeout id=9850f6c9b1cfebdb418a4777b411b820 timeout=20000ms service=1ms state=active
+Processing by StaticPagesController#home as HTML
+  [1m[35mVendor Load (0.2ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C3' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C4' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C5' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C6' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C7' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C8' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C9' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT24' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV136' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV137' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV138' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV139' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT15' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT22' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT23' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT26' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT28' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT31' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT32' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT35' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT37' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT38' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT39' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT40' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT41' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT42' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT45' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT46' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT47' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT48' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT49' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT50' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT51' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT52' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT53' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT54' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT55' LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT56' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT57' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT59' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT60' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT61' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT63' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT64' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT70' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT71' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT72' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT74' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT75' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB01' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'EB07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM02' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM04' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM11' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM13' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GM21' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GT07' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'GTBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD03' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD05' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD08' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD09' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD10' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD12' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD17' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD18' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD19' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'OD20' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'RSBIA1' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV140' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'SFV142' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C16' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT58' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'C14' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT73' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT67' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT66' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT77' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT65' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `vendors`.* FROM `vendors` WHERE `vendors`.`id` IS NULL LIMIT 1
+  [1m[36mVendor Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `vendors` WHERE `vendors`.`key` = BINARY 'DT78' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mVendor Load (0.6ms)[0m  [1mSELECT `vendors`.* FROM `vendors`  ORDER BY `vendors`.`key` ASC[0m
+  Rendered shared/_map.html.erb (7.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (10.5ms)
+  [1m[35mVendor Load (0.3ms)[0m  SELECT `vendors`.`business_name`, `vendors`.`location`, `vendors`.`description`, `vendors`.`lat`, `vendors`.`lon` FROM `vendors`
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 924ms (Views: 165.3ms | ActiveRecord: 31.1ms)
+source=rack-timeout id=9850f6c9b1cfebdb418a4777b411b820 timeout=20000ms service=929ms state=completed
