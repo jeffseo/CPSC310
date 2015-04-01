@@ -7,7 +7,7 @@ class StaticPagesController < ApplicationController
       @vendors = Vendor.order(:key)
     end
     @list_vendors = @vendors
-    @vmarkers = @vendors.select("business_name", "location", "description", "lat", "lon")
+    @vmarkers = @vendors
     gon.vendors = @vmarkers
   end
 
