@@ -62,6 +62,8 @@ gem 'omniauth-facebook'
 
 gem 'faraday'
 
+gem 'letsrate'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '3.4.0'
