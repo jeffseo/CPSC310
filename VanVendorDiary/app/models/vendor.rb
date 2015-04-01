@@ -1,5 +1,6 @@
 class Vendor < ActiveRecord::Base
   has_many :comments, dependent: :destroy
+  has_many :history_entries
 
   validates :key, presence: true, uniqueness: true
   def self.import(file)
