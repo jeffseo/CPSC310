@@ -22,9 +22,8 @@ function initialize() {
 
 function populateMap() {
   console.log("populating map");
-
-  for (var i in markers) {
-
+  
+  for(var i in markers) {
     var markerPos = new google.maps.LatLng( markers[i].lat, markers[i].lon );
 
     var marker = new google.maps.Marker({

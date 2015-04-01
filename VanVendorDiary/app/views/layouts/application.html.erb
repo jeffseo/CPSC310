@@ -8,11 +8,7 @@
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
 </head>
-<% if controller.controller_name == 'static_pages' %>
   <body data-no-turbolink>
-<% else %>
-  <body>
-<% end %>
     <%= render 'layouts/header'%>
     <div class="container">
       <% flash.each do |message_type, message| %>

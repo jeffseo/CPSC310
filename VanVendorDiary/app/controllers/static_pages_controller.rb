@@ -7,8 +7,7 @@ class StaticPagesController < ApplicationController
       @vendors = Vendor.order(:key)
     end
     @list_vendors = @vendors
-    @vmarkers = @vendors
-    gon.vendors = @vmarkers
+    gon.vendors = @vendors
   end
 
   def help
