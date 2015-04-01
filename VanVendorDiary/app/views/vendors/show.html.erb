@@ -3,14 +3,10 @@
     <div class="row">
         <div class="col-sm-10">
           <h1 ><%= @vendor.business_name %></h1>
-         
-          <button type="button" class="btn btn-success">Favorite us!</button>  
-        <br>
         </div>
       <div class="col-sm-2"><a class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://previews.123rf.com/images/subbotina/subbotina1307/subbotina130700052/20793553-grilled-beef-steak-meat-over-white-food-restaurant-steak.jpg"></a></div>
     </div>
   </div>
-
 <div class="panel panel-default">
   <div class="panel-heading"> Description</div>
   <div class="panel-body"><%= @vendor.description %></div>
@@ -23,8 +19,8 @@
   <div class="panel-heading"> Location </div>
   <div class="panel-body"><%= @vendor.location %></div>
 </div>
-<br>
-  <%= render 'shared/map' %>
+
+  <%= render 'shared/vmap' %>
 </br>
   <%= render 'make_comment' %>
   <%= render 'shared/comments', object: @vendor %>

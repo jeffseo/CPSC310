@@ -16,7 +16,6 @@ function initialize() {
 
   // initializing map
   map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
-
   populateMap();
 }
 
@@ -49,12 +48,44 @@ function populateMap() {
   }
 }
 
+function initializeSingle(){
+  var mapOptions = {
+    center: new google.maps.LatLng(markers.lat, markers.lon),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.NORMAL,
+    panControl: true,
+    scaleControl: false,
+    streetViewControl: true,
+    overviewMapControl: true
+  };
+  var vmap = new google.maps.Map(document.getElementById("vmap-canvas"),mapOptions);
+  
+  var markerPos = new google.maps.LatLng( markers.lat, markers.lon );
+
+  var marker = new google.maps.Marker({
+      position: markerPos,
+      map: vmap,
+      title: markers.business_name,
+    });
+
+
+
+
+}
+
 function loadScript() {
 	console.log("map loading ...");
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+  if (Object.keys(gon.vendors).length < 12) {
+    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+    '&libraries=drawing'+
+    '&callback=initializeSingle';
+    console.log("single");
+  } else {
+   script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
     '&libraries=drawing'+
     '&callback=initialize';
-    document.body.appendChild(script);
+  }
+  document.body.appendChild(script);
 }
