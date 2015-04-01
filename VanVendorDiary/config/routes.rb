@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   get 'vendors/autoimport' => 'vendors#autoimport'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
-  resources :users
+  resources :users do
+    resources :history_entries, only: [:create, :destroy]
+  end
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :vendors do
