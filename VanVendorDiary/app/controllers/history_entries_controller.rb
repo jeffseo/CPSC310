@@ -9,11 +9,6 @@ class HistoryEntriesController < ApplicationController
   def show
   end
 
-  # GET /history_entries/new
-  def new
-    @history_entry = HistoryEntry.new
-  end
-
   # POST /history_entries
   # POST /history_entries.json
   def create

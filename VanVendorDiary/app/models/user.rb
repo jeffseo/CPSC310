@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :comments, dependent: :destroy
-  has_many :history_entries, dependent: destroy
+  has_many :history_entries, dependent: :destroy
 
   attr_accessor :remember_token, :activation_token, :reset_token
 
