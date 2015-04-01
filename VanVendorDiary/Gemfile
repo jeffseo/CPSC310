@@ -56,10 +56,12 @@ gem 'tzinfo-data'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # puma does not time out, if we use puma server, we need to timeout.
-
 gem 'rack-timeout'
 
 gem 'omniauth-facebook'
+
+gem 'faraday'
+
 gem 'omniauth-twitter'
 gem 'faraday'
 
