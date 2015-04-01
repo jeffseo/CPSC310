@@ -11,7 +11,14 @@
   <% else %>
     <h1>Vancouver Vendor Diary</h1>
     <h2>Welcome to the visualization of <a href=" http://data.vancouver.ca/datacatalogue/foodVendors.htm"><em>Vendors of  Vancouver</em></a></h2>
-    <center><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></center>
+    <center><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></center></br>
+    <div id="user_nav">  
+        <% if current_omniauthuser %>  
+          <%= link_to "Sign Out", log_out %>  
+        <% else %>  
+          <center><%= link_to "Sign in with facebook", "/auth/facebook", id: "sign_in", class: "btn btn-lg btn-primary" %></center>
+        <% end %>  
+      </div> 
     <center><%= link_to image_tag("VVD.png", alt: "Team SO logo"), root_path %></center>
   <% end %>
 </div>

@@ -58,6 +58,10 @@ gem 'tzinfo-data'
 # puma does not time out, if we use puma server, we need to timeout.
 gem 'rack-timeout'
 
+gem 'omniauth-facebook'
+
+gem 'faraday'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '3.4.0'
@@ -85,3 +89,5 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma', '2.11.1'
 end
+
+
