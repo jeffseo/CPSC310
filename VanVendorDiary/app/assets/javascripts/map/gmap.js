@@ -22,9 +22,8 @@ function initialize() {
 
 function populateMap() {
   console.log("populating map");
-
-  for (var i in markers) {
-
+  
+  for(var i in markers) {
     var markerPos = new google.maps.LatLng( markers[i].lat, markers[i].lon );
 
     var marker = new google.maps.Marker({
@@ -34,9 +33,10 @@ function populateMap() {
     });
 
     var infoWindow = new google.maps.InfoWindow({
-      content: "<h3>" + markers[i].business_name + "</h3>" +
+      content: 
+      '<h3><a href="/vendors/'+markers[i].id+'">'+markers[i].business_name+"</a></h3>" +
       "<strong>Type of food: </strong>" + markers[i].description + "<br />" +
-      "<strong>Location: </strong>" + markers[i].location 
+      "<strong>Location: </strong>" + markers[i].location + "<br />" 
     });
 
     google.maps.event.addListener(marker, 'click', function(pointer, bubble) {
