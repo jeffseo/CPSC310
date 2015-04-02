@@ -10,6 +10,7 @@ class HistoryEntriesController < ApplicationController
     if @vendor
       @history_entry = HistoryEntry.new
       @history_entry.user = current_user
+      @history_entry.vendor = @vendor
       @history_entry.date_time = DateTime.now
 
       if @history_entry.save
@@ -33,6 +34,6 @@ class HistoryEntriesController < ApplicationController
     end
 
     def history_entry_params
-      params.require(:history_entry).permit(:date_time, :user_id)
+      params.require(:history_entry).permit(:date_time, :user_id, :vendor_id)
     end
 end

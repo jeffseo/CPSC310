@@ -5,5 +5,6 @@ class HistoryEntry < ActiveRecord::Base
   belongs_to :vendor
 
   validates :user_id, presence: true
+  validates :vendor_id, presence: true
   validates :date_time, presence: true
 end
