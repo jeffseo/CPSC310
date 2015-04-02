@@ -4,7 +4,6 @@ User.create!(name:  "Example User",
              email: "example@vvd.org",
              password:              "foobar",
              password_confirmation: "foobar",
-             admin: true,
              activated: true,
              activated_at: Time.zone.now.to_datetime)
 
@@ -32,8 +31,6 @@ Vendor.create!(key:           vendor_num ,
                lon:           "10")
 vendor_num = vendor_num + 1
 end
-
-
 
 users = User.order(:created_at).take(6)
 vendor_num = 1 

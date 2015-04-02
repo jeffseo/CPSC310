@@ -44,9 +44,9 @@ class UsersControllerTest < ActionController::TestCase
   
   test "should not allow the admin attribute to be edited via the web" do
     log_in_as(@other_user)
-    assert_not @other_user.admin?
+    assert_not @other_user.is_admin?
     patch :update, id: @other_user, user: { password: @other_user.password, password_confirmation: @other_user.password_confirmation, admin: true}
-    assert_not @other_user.admin?
+    assert_not @other_user.is_admin?
     # TODO(sainan): add checking if the forwarding URL is reverted to the default. Add by checking for the right value of seesion[:forwarding_url]
   end
   
@@ -65,3 +65,4 @@ class UsersControllerTest < ActionController::TestCase
     assert_redirected_to root_url
   end
 end
+    
