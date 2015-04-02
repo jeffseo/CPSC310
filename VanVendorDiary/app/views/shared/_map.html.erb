@@ -18,7 +18,7 @@
 
     <% @list_vendors.each do |v| %>
     <tr>
-      <td><%= v.business_name %></td>
+      <td><li><%= link_to v.business_name, v %></li></td>
       <td><%= v.location %></td>
       <td><%= v.description %></td>
     </tr>
