@@ -254,9 +254,7 @@ span.picture {
 .jumbotron {
   background:transparent;
   a {
-    color: white;
     &:hover {
-      color: $gray-darker;
       background-color: transparent;
     }
   }

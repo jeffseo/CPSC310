@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   root 'static_pages#home'
   get 'help' => 'static_pages#help'
   get 'about' => 'static_pages#about'
@@ -8,7 +9,9 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   get 'vendors/index'
   get 'vendors/autoimport' => 'vendors#autoimport'
-  get 'auth/:provider/callback', to: 'sessions#facebookcreate'
+  #get 'auth/:provider/callback', to: 'sessions#facebookcreate'
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/signout" => "sessions#destroy", :as => :signout
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   resources :users
