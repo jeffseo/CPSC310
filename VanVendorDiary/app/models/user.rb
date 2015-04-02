@@ -70,6 +70,11 @@ class User < ActiveRecord::Base
     reset_sent_at < 2.hours.ago
   end
   
+  # For admin user
+  def is_admin?
+    self.email && ENV['ADMIN_EMAILS'].to_s.include?(self.email)
+  end
+  
   private
   
     # Converts email to all lower-case.

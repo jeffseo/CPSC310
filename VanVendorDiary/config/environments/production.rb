@@ -23,11 +23,15 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
-
+  
+  # For adding admin user and for heroku.
+  config.serve_static_asserts = true
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
-
+  
+  # For adding admin user precompile asserts for development environment(heroku)
+  config.assets.precompile += ['active_admin.js', 'active_admin.css', 'active_admin/print.css']
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
