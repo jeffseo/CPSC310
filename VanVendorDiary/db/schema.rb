@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150330071120) do
+ActiveRecord::Schema.define(version: 20150402031500) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -38,6 +38,17 @@ ActiveRecord::Schema.define(version: 20150330071120) do
 
   add_index "comments", ["user_id", "created_at"], name: "index_comments_on_user_id_and_created_at", using: :btree
   add_index "comments", ["vendor_id", "created_at"], name: "index_comments_on_vendor_id_and_created_at", using: :btree
+
+  create_table "history_entries", force: :cascade do |t|
+    t.datetime "date_time"
+    t.integer  "user_id",    limit: 4
+    t.integer  "vendor_id",  limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  add_index "history_entries", ["user_id", "created_at"], name: "index_history_entries_on_user_id_and_created_at", using: :btree
+  add_index "history_entries", ["vendor_id", "created_at"], name: "index_history_entries_on_vendor_id_and_created_at", using: :btree
 
   create_table "omniauthusers", force: :cascade do |t|
     t.string   "provider",   limit: 255
@@ -79,4 +90,6 @@ ActiveRecord::Schema.define(version: 20150330071120) do
   end
 
   add_foreign_key "comments", "users"
+  add_foreign_key "history_entries", "users"
+  add_foreign_key "history_entries", "vendors"
 end

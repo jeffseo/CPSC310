@@ -33,7 +33,7 @@ vendor_num = vendor_num + 1
 end
 
 users = User.order(:created_at).take(6)
-vendor_num = 1 
+vendor_num = 1
 50.times do
   content = Faker::Lorem.sentence(5)
   vendor = Vendor.find(vendor_num)

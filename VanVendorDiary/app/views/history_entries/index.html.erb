@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing History Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @history_entries.each do |history_entry| %>
+      <tr>
+        <td><%= history_entry.date_time %></td>
+        <td><%= link_to 'Show', history_entry %></td>
+        <td><%= link_to 'Edit', edit_history_entry_path(history_entry) %></td>
+        <td><%= link_to 'Destroy', history_entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New History entry', new_history_entry_path %>

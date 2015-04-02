@@ -1,5 +1,7 @@
 class Vendor < ActiveRecord::Base
   has_many :comments, dependent: :destroy
+  has_many :history_entries
+
   validates :key, presence: true, uniqueness: true
   def self.import(file)
     allowed_attributes = [ "key", "vendor_type", "status", "business_name", "location", "description", "lat", "lon"]
@@ -38,7 +40,7 @@ class Vendor < ActiveRecord::Base
       if(vendor.valid?)
         vendor.save!
       end
-    end  
+    end
   end
 
   def self.open_spreadsheet(file)

@@ -42,13 +42,12 @@ class VendorsController < ApplicationController
     @vendors = Vendor.search(params[:search])
   end
 
-  def autoimport 
+  def autoimport
     @vendors = Vendor.autoimport
     flash[:success] = "database downloaded"
   end
 
   private
-
     def vendor_params
       params.require(:vendor).permit(:key, :business_name, :location, :description, :lat, :lon)
     end
