@@ -84,9 +84,11 @@ footer {
   a {
     color: $gray;
     background-color: transparent;
+    text-decoration: none;
     &:hover {
       color: $gray-darker;
       background-color: transparent;
+      text-decoration: none;
     }
   }
   

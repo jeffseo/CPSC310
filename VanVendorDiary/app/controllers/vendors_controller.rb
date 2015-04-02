@@ -10,6 +10,7 @@ class VendorsController < ApplicationController
   
   def show
     @vendor = Vendor.find(params[:id])
+    gon.vendors = @vendor
     @comment = current_user.comments.build if logged_in?
     @comments = @vendor.comments.paginate(page: params[:page])
   end
