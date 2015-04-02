@@ -40,7 +40,7 @@ class Vendor < ActiveRecord::Base
       if(vendor.valid?)
         vendor.save!
       end
-    end  
+    end
   end
 
   def self.open_spreadsheet(file)

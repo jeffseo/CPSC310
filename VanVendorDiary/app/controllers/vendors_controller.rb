@@ -41,14 +41,13 @@ class VendorsController < ApplicationController
     @vendors = Vendor.search(params[:search])
   end
 
-  def autoimport 
+  def autoimport
     @vendors = Vendor.autoimport
     flash[:success] = "database downloaded"
     redirect_to :controller=>'static_pages', :action =>'home'
   end
 
   private
-
     def vendor_params
       params.require(:vendor).permit(:key, :business_name, :location, :description, :lat, :lon)
     end
