@@ -59,6 +59,9 @@ gem 'tzinfo-data'
 
 gem 'rack-timeout'
 
+gem 'omniauth-facebook'
+
+gem 'faraday'
 # Added for admin user
 gem 'activeadmin', github: 'activeadmin'
 # Added to manage environment variable.

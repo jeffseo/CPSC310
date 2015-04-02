@@ -29,7 +29,12 @@ module SessionsHelper
       end
     end
   end
-  
+
+  # Returns the current omniauthuser
+  def current_omniauthuser
+    @current_omniauthuser ||= Omniauthuser.find_by(id: session[:user_id])
+  end
+
   # Returns true if the user is logged in, false otherwise.
   def logged_in?
     !current_user.nil?
@@ -37,7 +42,6 @@ module SessionsHelper
   
   # Forgets a persistent session.
   def forget(user)
-    user.forget
     cookies.delete(:user_id)
     cookies.delete(:remember_token)
   end
