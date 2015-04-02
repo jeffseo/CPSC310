@@ -1,8 +1,13 @@
 class StaticPagesController < ApplicationController
   def home
     @vendors = Vendor.autoimport
-    @list_vendors = Vendor.order(:key)
-    @vmarkers = Vendor.select("business_name", "location", "description", "lat", "lon")
+    if params[:search]
+      @vendors = Vendor.search(params[:search])
+    else
+      @vendors = Vendor.order(:key)
+    end
+    @list_vendors = @vendors
+    @vmarkers = @vendors.select("business_name", "location", "description", "lat", "lon")
     gon.vendors = @vmarkers
   end
 

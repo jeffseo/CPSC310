@@ -36,7 +36,7 @@ function populateMap() {
     var infoWindow = new google.maps.InfoWindow({
       content: "<h3>" + markers[i].business_name + "</h3>" +
       "<strong>Type of food: </strong>" + markers[i].description + "<br />" +
-      "<strong>Location: </strong>" + markers[i].location
+      "<strong>Location: </strong>" + markers[i].location 
     });
 
     google.maps.event.addListener(marker, 'click', function(pointer, bubble) {

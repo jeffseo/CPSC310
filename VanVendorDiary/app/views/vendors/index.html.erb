@@ -1,10 +1,8 @@
 <% provide(:title, 'Vendors') %>
 <h1>All Vendors</h1>
-<% if current_user.admin? %>
-  <%= form_tag import_vendors_path, multipart: true do %>
-    <%= file_field_tag :file %>
-    <%= submit_tag "Import" %>
-  <% end %>
+<%= form_tag(vendors_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Vendors" %>
+  <%= submit_tag "Search", :name => nil %>
 <% end %>
 
 <% provide(:title, 'All vendors') %>
@@ -16,3 +14,10 @@
 </ul>
 
 <%= will_paginate %>
+
+<% if current_user.admin? %>
+  <%= form_tag import_vendors_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import" %>
+  <% end %>
+<% end %>
