@@ -12,9 +12,9 @@
   <li><%= link_to vendor.business_name, vendor %></li>
 <% end %>
 </ul>
-
 <%= will_paginate %>
 
+<br>
 <% if current_user.is_admin? %>
   <%= form_tag import_vendors_path, multipart: true do %>
     <%= file_field_tag :file %>
