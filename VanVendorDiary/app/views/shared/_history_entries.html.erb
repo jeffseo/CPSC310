@@ -1,10 +1,11 @@
 <div class="col-md-8">
   <h3>History (<%= object.history_entries.count %>)</h3>
   <% if object.history_entries.any? %>
-    <ol class="comments">
-      <%= render @history_entries %> | Checked in at: ???
-    </ol>
-    <%= will_paginate @history_entries %>
+    <ul class="comments">
+      <% object.history_entries.each do |he| %>
+        <li><%= he.date_time %></li>
+      <% end %>
+    </ul>
   <% else %>
     You haven't been anywhere yet! You can check in at a vendor through their page.
   <% end %>

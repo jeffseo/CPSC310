@@ -10,7 +10,7 @@
     <th>description</th>
     <th>lat</th>
     <th>lon</th>
-  </tr> 
+  </tr>
 
   <tr>
     <td><%= @vendor.key %></td>
@@ -21,9 +21,10 @@
     <td><%= @vendor.lon %></td>
   </tr> 
 </table>
-
-  <%= render 'make_comment' %>
-  <%= render 'shared/comments', object: @vendor %>
+<br />
+<%= render 'shared/history_entry_form' %>
+<%= render 'make_comment' %>
+<%= render 'shared/comments', object: @vendor %>
   
 </br>
 <%= link_to "Go Back to index", vendors_path %>

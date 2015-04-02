@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
+  
   # Created so that /users view can work
   def index
     @users = User.paginate(page: params[:page])
@@ -10,7 +11,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @comments = @user.comments.paginate(page: params[:page])
-    @history = @user.history_entries.paginate(page: params[:page])
   end
 
   def new

@@ -1,21 +1,21 @@
 class HistoryEntriesController < ApplicationController
   # before_action :set_history_entry, only: [:show, :edit, :update, :destroy]
-  before_action :logged_in_user, only: :create
+  before_action :logged_in_user, only: [:create, :destroy]
 
   # @history_entries = HistoryEntry.all
 
-  # POST /history_entries
-  # POST /history_entries.json
   def create
-    @vendor = Vendor.find(params[:vendor_id])
+    @vendor = Vendor.find(params[:vid])
+
     if @vendor
-      @history_entry = HistoryEntry.new(history_entry_params)
+      @history_entry = HistoryEntry.new
       @history_entry.user = current_user
       @history_entry.date_time = DateTime.now
 
       if @history_entry.save
         flash[:success] = "Checked in successfully!"
       end
+      redirect_to @vendor
     else
       redirect_to root_url, :alert => "You can't check in."
     end
@@ -33,6 +33,6 @@ class HistoryEntriesController < ApplicationController
     end
 
     def history_entry_params
-      params.require(:history_entry).permit(:date_time)
+      params.require(:history_entry).permit(:date_time, :user_id)
     end
 end
