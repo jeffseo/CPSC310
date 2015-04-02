@@ -10,6 +10,7 @@ class VendorsController < ApplicationController
   
   def show
     @vendor = Vendor.find(params[:id])
+    gon.vendors = @vendor
     @comment = current_user.comments.build if logged_in?
     @comments = @vendor.comments.paginate(page: params[:page])
   end
@@ -44,7 +45,6 @@ class VendorsController < ApplicationController
   def autoimport
     @vendors = Vendor.autoimport
     flash[:success] = "database downloaded"
-    redirect_to :controller=>'static_pages', :action =>'home'
   end
 
   private

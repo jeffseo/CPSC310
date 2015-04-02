@@ -1,31 +1,32 @@
 <%= provide(:title, @vendor.business_name) %>
-<h1>
-  <%= @vendor.business_name %>
-</h1>
-<table border = "2">
-  <tr>
-    <th>key</th>
-    <th>vendor_type</th>
-    <th>location</th>
-    <th>description</th>
-    <th>lat</th>
-    <th>lon</th>
-  </tr>
+<div class="container target">
+  <div class="row">
+    <div class="col-sm-10">
+      <h1 ><%= @vendor.business_name %></h1>
+    </div>
+    <div class="col-sm-2"><a class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://previews.123rf.com/images/subbotina/subbotina1307/subbotina130700052/20793553-grilled-beef-steak-meat-over-white-food-restaurant-steak.jpg"></a></div>
+  </div>
+</div>
 
-  <tr>
-    <td><%= @vendor.key %></td>
-    <td><%= @vendor.vendor_type %></td>
-    <td><%= @vendor.location %></td>
-    <td><%= @vendor.description %></td>
-    <td><%= @vendor.lat %></td>
-    <td><%= @vendor.lon %></td>
-  </tr> 
-</table>
+<div class="panel panel-default">
+  <div class="panel-heading"> Description</div>
+  <div class="panel-body"><%= @vendor.description %></div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> Type</div>
+  <div class="panel-body"><%= @vendor.vendor_type %></div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> Location </div>
+  <div class="panel-body"><%= @vendor.location %></div>
+</div>
+
+<%= render 'shared/vmap' %>
 <br />
 <%= render 'shared/history_entry_form' %>
 <%= render 'make_comment' %>
 <%= render 'shared/comments', object: @vendor %>
-  
-</br>
-<%= link_to "Go Back to index", vendors_path %>
-
+<br />
+<%= link_to "Go Back to Index", vendors_path %>

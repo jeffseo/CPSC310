@@ -67,7 +67,6 @@ ActiveRecord::Schema.define(version: 20150402031500) do
     t.datetime "updated_at",                                    null: false
     t.string   "password_digest",   limit: 255
     t.string   "remember_digest",   limit: 255
-    t.boolean  "admin",             limit: 1,   default: false
     t.string   "activation_digest", limit: 255
     t.boolean  "activated",         limit: 1,   default: false
     t.datetime "activated_at"
