@@ -79,18 +79,20 @@ function loadScript() {
   script.type = 'text/javascript';
 
   script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
-  '&libraries=drawing'+
-  '&callback=initialize';
+    '&libraries=drawing'+
+    '&callback=initialize';
   document.body.appendChild(script);
 }
 
-function loadScript2() {
+function loadScript2(){
 	console.log("map loading ...");
   var script = document.createElement('script');
   script.type = 'text/javascript';
   script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
-  '&libraries=drawing'+
-  '&callback=initializeSingle';
-
+    '&libraries=drawing'+
+    '&callback=initializeSingle';
+  console.log("single");
   document.body.appendChild(script);
+
 }
+
