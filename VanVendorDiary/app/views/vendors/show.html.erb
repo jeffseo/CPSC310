@@ -25,8 +25,11 @@
 
 <%= render 'shared/vmap' %>
 <br />
-<%= render 'shared/history_entry_form' %>
-<%= render 'make_comment' %>
-<%= render 'shared/comments', object: @vendor %>
+<% if current_omniauthuser %>
+<% elsif current_user%>
+  <%= render 'shared/history_entry_form' %>
+  <%= render 'make_comment' %>
+  <%= render 'shared/comments', object: @vendor %>
+<% end %>
 <br />
 <div class="btn btn-default"><%= link_to "Go Back to Index", vendors_path %></div>

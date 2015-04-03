@@ -10,7 +10,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
-        <% if logged_in? %>
+        <% if current_omniauthuser %>
+         <%= link_to "Sign Out", log_out %>
+        <% elsif logged_in? %>
           <% if current_user.is_admin? %>
             <li><%= link_to 'Admin', admin_dashboard_path%></li>
           <% end %>

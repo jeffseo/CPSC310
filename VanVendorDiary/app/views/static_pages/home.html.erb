@@ -14,12 +14,8 @@
     <center><h4>Feeling hungry? Here you can locate food vendors in Vancouver and share your thoughts with other users!</h4></center><br>
     <center><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></center></br>
     <div id="user_nav">  
-        <% if current_omniauthuser %>  
-          <%= link_to "Sign Out", log_out %>  
-        <% else %>  
-          <center><%= link_to "Sign in with facebook", "/auth/facebook", id: "sign_in", class: "btn btn-lg btn-primary" %></center><br>
-        <% end %>  
-      </div> 
+       <center><%= link_to "Sign in with facebook", "/auth/facebook", id: "sign_in", class: "btn btn-lg btn-primary" %></center>
+    </div> 
     <center><%= link_to image_tag("VVD.png", alt: "Team SO logo"), root_path %></center>
   <% end %>
 </div>
