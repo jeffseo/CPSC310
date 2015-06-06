@@ -1,8 +1,10 @@
 # Team StrattonOakmont
 
-Project: Vancouver Vendor Diary
+Project:   
+Vancouver Vendor Diary
 
-Description: Displays all available food vendors in vancouver and allows users to favorite, comment, and rate them.
+Description:  
+Displays all available food vendors in vancouver and allows users to favorite, comment, and rate them.
 
 Note:  
 This project was created for the final project of CPSC 310.  
